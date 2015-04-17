@@ -1,1 +1,0 @@
-jQuery(window).ready(function($){var a=$(".tabs.overview li"),e=0;a.each(function(t,i){var n=$(i);n.click(function(i){i.preventDefault(),a.removeClass("active above below"),t==e+1?a.eq(e).addClass("above"):t==e-1&&a.eq(e).addClass("below"),$(this).addClass("active"),$(".tab_content").hide();var n=$(this).find("a").attr("href");$(n).fadeIn(750),e=t})})});

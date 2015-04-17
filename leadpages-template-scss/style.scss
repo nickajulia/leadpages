@@ -37,7 +37,8 @@ $block-grid-elements: 12;
 $block-grid-default-spacing: rem-calc(0);
 $Oswald: Oswald, sans-serif;
 $Lato: Lato,sans-serif;
-$h1: 'Noto Sans', Arial, helvetica, sans-serif;
+$h1Family: 'Noto Sans', Arial, helvetica, sans-serif;
+$h1Color:#000000;
 
 
 /* sitewide
@@ -176,9 +177,9 @@ background-image: linear-gradient(to top, rgba(0, 0, 0, 0.001), #ffffff);
 }
 
 h1{
-	font-family: $h1;
+	font-family: $h1Family;
 	font-size: 3rem;
-	color:#ffffff;
+	color:$h1Color;
 }
 
 h2{
