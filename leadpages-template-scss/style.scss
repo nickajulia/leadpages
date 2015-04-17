@@ -1,14 +1,53 @@
 
 /*Style.scss*/
-@import 'bootstrap';
-@import 'foundation';
-@import 'normalize';
+@import 'bower_components/bootstrap/dist/css/bootstrap.min.css';
+@import 'bower_components/normalize-css/normalize.css';
+
+//@import 'foundation';
+@import 'susy';
 
 
+/* Grid
+---------------------------------------------------------- */
+$susy: (
+  container:90%,
+  columns:12,
+  gutters: .25,
+  gutter-position: after,
+  global-box-sizing: border-box,
+  debug: (
+    image: show,
+    
+  ),
+  );
 
+body{
+  @include container;
+}
+.theHeader{
+  
+  @include span(9 of 12);
+  margin-left: span(1.5 wide of 12);
+  
+}
+
+.headerWrap{
+  @include show-grid(9);
+  @include span(9 of 9);
+}
+.headerLeft{
+  @include span(3 of 9);
+}
+.headerCenter{
+  @include span(3 of 9 at 3);
+}
+.headerRight{
+  @include span(3 of 9 last);
+}
 
 /* variables
 ---------------------------------------------------------- */
+
 $black: #000001;
 $headerBgColor:transparent;
 $headerBtmBorder:transparent;
