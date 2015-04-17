@@ -37,6 +37,7 @@ $block-grid-elements: 12;
 $block-grid-default-spacing: rem-calc(0);
 $Oswald: Oswald, sans-serif;
 $Lato: Lato,sans-serif;
+$h1: 'Noto Sans', Arial, helvetica, sans-serif;
 
 
 /* sitewide
@@ -175,7 +176,7 @@ background-image: linear-gradient(to top, rgba(0, 0, 0, 0.001), #ffffff);
 }
 
 h1{
-	font-family: Lato,sans-serif;
+	font-family: $h1;
 	font-size: 3rem;
 	color:#ffffff;
 }
