@@ -16,9 +16,9 @@
 /*--- Bullet Lists--*/
 $headerBullets:#ffffff;
 $bulletSquare:#666666;
-$bulletSquare2:#E00A15;
+$bulletSquare2:#4E97F2;
 $bulletNumber2:#fffffd;
-$bulletLine:#000002;
+$bulletLine:#d4d4d3;
 
 /*--- BG colors--*/
 $headerBgColor:transparent;
@@ -73,9 +73,13 @@ $divider1: #4E97F1;
 $section2Bg:rgba(78, 151, 241, 0.1);
 $section2Border:#d4d4d4;
 
+/*--- Section 4--*/
+$section4Bg:$lightGrey;
+$section4Border:#d4d4d5;
 
-
-
+/*--- Section 5--*/
+$section5Bg:rgba(78, 151, 242, 0.1);
+$ribbon: #4E97F2;
 
 /* sitewide
 ---------------------------------------------------------- */
@@ -146,9 +150,14 @@ body {
 	font-size: 1em;
 }
 
+.mg-btm-xs{
+  margin-bottom:1.5rem;
+}
+
 .mg-btm-sm{
   margin-bottom:2rem;
 }
+
 
 .mg-btm-md{
   margin-bottom:5rem;
@@ -166,6 +175,13 @@ body {
   margin-left:2rem;
 }
 
+.pd-top-sm{
+   padding-top:2rem;
+}
+
+.pd-btm-sm{
+   padding-bottom:2rem;
+}
 
 .none{
 	float: none;
@@ -288,9 +304,6 @@ color: $black;
 .divider{
 
   border-bottom-style: solid;
-  border-bottom-color: $divider1;
-  border-bottom-width: calc(10px);
-  
    
     &:before, &:after {
       content: " ";
@@ -303,43 +316,38 @@ color: $black;
     left: 48%;
     }
 
-  
-    &:before {
-      
-       border-top: calc(40px) solid #ff0080;
-    border-left-width: calc(40px);
-    border-right-width: calc(40px);
-    }
-
-  
-    &:after {
-    border-top: calc(40px) solid white;
-    border-left-width: calc(40px);
-    border-right-width: calc(40px);
-    margin-top: -12px;
-    }
-
 }
-.divider1{
+.section1Divider{
   border-bottom-color: $divider1;
-
+  border-bottom-width: calc(10px);
   
     &:before {
       
        border-top: calc(40px) solid $divider1;
+      border-left-width: calc(40px);
+      border-right-width: calc(40px);
     }
 
   
     &:after {
+    
     border-top: calc(40px) solid white;
+    border-left-width: calc(40px);
+    border-right-width: calc(40px);
+    margin-top: -12px;
     
     }
   }
 
 
+
+
 /* Section2
 ---------------------------------------------------------------------------------------------------- */
 
+#section2 h2{
+  font-size: 2.2rem;
+}
 
 .section2Wrap{
   background: $section2Bg;
@@ -349,7 +357,131 @@ color: $black;
 
 
 
+/* Section4
+---------------------------------------------------------------------------------------------------- */
+
+
+.section4Wrap{
+  background: $section4Bg;
+  border-bottom-color: $section4Border;
+  border-top: 1px solid $section4Border;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+#section4bGrid ul li img{
+  height: 75px;
+}
+
+.section4Divider{
+  border-bottom-color: $section4Border;
+  border-bottom-width: calc(10px);
+  
+    &:before {
+      
+      border-top: calc(40px) solid $section4Border;
+      border-left-width: calc(40px);
+      border-right-width: calc(40px);
+    }
+
+  
+    &:after {
+    
+    border-top: calc(40px) solid $section4Bg;
+    border-left-width: calc(40px);
+    border-right-width: calc(40px);
+    margin-top: -12px;
+    
+    }
+  }
+
+
 /* Section5
+---------------------------------------------------------------------------------------------------- */
+.section5Bg{
+  background-color: $section5Bg;
+}
+
+.ribbon-wrapper {
+  overflow: hidden;
+  position: relative;
+ 
+  right: calc(-35px);
+  float: right;
+  margin-bottom: 22px;
+  //margin-top: -22px;
+  padding-top: 22px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.ribbon-container {
+  color: #fffffa;
+  clear: both;
+  font-size: 30px;
+  font-weight: 700;
+  background: $ribbon;
+  height: calc(55px);
+  padding: 7px 22px;
+  position: relative;
+  float: right;
+  max-width: 100%;
+  width: 90%;
+  white-space: nowrap;
+ 
+
+  &:before{
+
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border: 27px solid $ribbon;
+  height: 0;
+  z-index: 5;
+  left: -36px;
+  border-left-width: 15px;
+  border-left-color: transparent;
+  padding: 1.5px 0 0 0;
+  }
+
+  &:after{
+
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -20px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font: 0/0 a;
+  color: transparent;
+  text-decoration: none;
+  border-width: 20px 0 0 21px;
+  border-color: transparent #0177bc;
+  border-style: dashed solid;
+  }
+
+}
+
+p.ribbon {
+  color: #fffffa;
+  clear: both;
+  font-size: 29px;
+  font-weight: 700;
+  background: $ribbon;
+  line-height: inherit;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+  max-width: 95%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+/* Section6
 ---------------------------------------------------------------------------------------------------- */
 
 
@@ -381,7 +513,8 @@ ol ol {
     *padding: .4em;
     margin: 0em 0 0em 2.5em;
     //background: #ddd;
-    color: black;
+    color: $pColor;
+    font-size: calc(20px);
     text-decoration: none;
     transition: none;  
     
@@ -403,12 +536,13 @@ ol ol {
     top: 0;
     margin-top: 0em;
     background: $bulletSquare2;
-    height: 2em;
+    //height: 2em;
     width: 2em;
     line-height: 2em;
     text-align: center;
     font-weight: bold;
     color: $bulletNumber2;
+    font-size: calc(22px);
     
 }
 
@@ -419,8 +553,9 @@ ol ol {
   height: 100%;
   position: absolute;
   top: 2em;
-  left: 1em;
-  width: 2px;        
+  left: calc(21px);
+  width: 2px;  
+  z-index: -1;      
 }
 
 
