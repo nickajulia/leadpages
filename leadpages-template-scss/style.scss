@@ -10,16 +10,6 @@
 ---------------------------------------------------------- */
 
 
-
-
-
-/*--- Bullet Lists--*/
-$headerBullets:#ffffff;
-$bulletSquare:#666666;
-$bulletSquare2:#4E97F2;
-$bulletNumber2:#fffffd;
-$bulletLine:#d4d4d3;
-
 /*--- BG colors--*/
 $headerBgColor:transparent;
 $overlay: #00000A;
@@ -32,6 +22,7 @@ $grey-hover:#999;
 $yellow: rgba(255, 189, 14, 1);
 $lightblue: #7DCEEC;
 $white: #ffffff;
+$box: rgba(0,0,0,0.15);
 $faBlue: #2E5884;
 $black: #000001;
 $bulletTop:#4FA5FF;
@@ -48,6 +39,18 @@ $buttonColorHover:#FF9C01;
 /*--- Block Grid --*/
 $block-grid-elements: 12;
 $block-grid-default-spacing: rem-calc(0);
+
+
+
+/*--- Bullet Lists--*/
+$headerBullets:#ffffff;
+$bulletSquare:#666666;
+$bulletSquare2:$grey;
+$bulletNumber2:#fffffd;
+$bulletLine:#d4d4d3;
+
+
+
 
 /*--- Font Variables--*/
 
@@ -66,11 +69,11 @@ $pColor:#595757;
 
 /*--- Other By section--*/
 $headerBtmBorder:transparent;
-$divider1: #4E97F1;
+$divider1: #ECF4FC;
 
 
 /*--- Section 2--*/
-$section2Bg:rgba(78, 151, 241, 0.1);
+$section2Bg:#ECF4FD;
 $section2Border:#d4d4d4;
 
 /*--- Section 4--*/
@@ -78,8 +81,17 @@ $section4Bg:$lightGrey;
 $section4Border:#d4d4d5;
 
 /*--- Section 5--*/
-$section5Bg:rgba(78, 151, 242, 0.1);
-$ribbon: #4E97F2;
+$section5Bg:#ECF4FE;
+$ribbon: #0E54A7;
+$ribbonAfter:#063165;
+
+
+/*--- Section 7--*/
+$divider7: #C8DBEC;
+$section7Bg:#ECF4FB;
+
+
+/*--- Section 8--*/
 
 /* sitewide
 ---------------------------------------------------------- */
@@ -168,6 +180,10 @@ body {
 .mg-top-sm{
   margin-top:2rem;
 }
+
+.mg-top-sM{
+  margin-top: 3.5rem;
+}
 .mg-top-md{
   margin-top:5rem;
 }
@@ -205,6 +221,9 @@ body {
 }
 
 
+.posRelative{
+  position: relative;
+}
 
 /* colors
 ---------------------------------------------------------------------------------------------------- */
@@ -225,6 +244,9 @@ body {
 }
 .white{
 	background-color: $white;
+}
+.box {
+  box-shadow: 0 0 15px $box;
 }
 .black{
 	background-color: $black;
@@ -340,19 +362,40 @@ color: $black;
   }
 
 
-
+.compHands{
+  position: absolute;
+  bottom:0;
+  right:4%;
+  z-index: -1;
+  height:calc(550px);
+  max-width: 28%;
+  margin-left: 10px;
+  filter:grayscale(1) opacity(.5);
+}
 
 /* Section2
 ---------------------------------------------------------------------------------------------------- */
 
 #section2 h2{
   font-size: 2.2rem;
+  text-align: left;
 }
 
 .section2Wrap{
   background: $section2Bg;
   border-bottom-color: $section2Border ;
   border-top: 1px solid $section2Border;
+}
+
+
+
+/* Section3
+---------------------------------------------------------------------------------------------------- */
+
+
+.section3cRight{
+  margin-bottom: 2rem;
+  margin-top:5rem;
 }
 
 
@@ -459,7 +502,7 @@ color: $black;
   color: transparent;
   text-decoration: none;
   border-width: 20px 0 0 21px;
-  border-color: transparent #0177bc;
+  border-color: transparent $ribbonAfter;
   border-style: dashed solid;
   }
 
@@ -557,6 +600,152 @@ ol ol {
   width: 2px;  
   z-index: -1;      
 }
+
+
+
+/* Section 7
+---------------------------------------------------------------------------------------------------- */
+
+
+
+
+.section7BlockGrid1{
+
+  @include block-grid(
+    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
+    // Available options: 1-12 by default, and false.
+    $per-row: 2,
+
+    // This controls how much space is between each item in the block grid.
+    // Use a variable or any pixel or em values.
+    $spacing: $block-grid-default-spacing,
+
+    // This controls whether or not base styles come through, set to false to leave out.
+    $base-style: true
+  );
+}
+
+
+.section7BlockGrid2{
+
+  @include block-grid(
+    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
+    // Available options: 1-12 by default, and false.
+    $per-row: 1,
+
+    // This controls how much space is between each item in the block grid.
+    // Use a variable or any pixel or em values.
+    $spacing: $block-grid-default-spacing,
+
+    // This controls whether or not base styles come through, set to false to leave out.
+    $base-style: true
+  );
+}
+
+/*--Both Grids Section7  --*/
+
+.section7Divider{
+  border-bottom-color: $divider7;
+  border-bottom-width: calc(10px);
+  
+    &:before {
+      
+       border-top: calc(40px) solid $divider7;
+      border-left-width: calc(40px);
+      border-right-width: calc(40px);
+    }
+
+  
+    &:after {
+    
+    border-top: calc(40px) solid $section7Bg;
+    border-left-width: calc(40px);
+    border-right-width: calc(40px);
+    margin-top: -12px;
+    
+    }
+  }
+
+.section7Bg{
+  background-color: $section7Bg;
+}
+
+.section7aGrid{
+
+}
+
+/*--Block Grid 1 --*/
+.testi>img  {
+  border-radius: 100%;
+  margin: 0 auto 1.25em;
+  width: 120px;
+  height: 120px;
+}
+
+
+
+#section7 .testi p {
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-size: 12px;
+  text-align: center
+}
+
+
+
+
+#section7 .section7BlockGrid1 {  
+
+  blockquote {
+    border-left: 0;
+    //color: #999;
+    font-size: 15px;
+    //font-style: italic;
+    line-height: 1.5em;
+    margin: 2em auto 0;
+    &:before{
+      content: "";
+    width: 80px;
+    height: 1px;
+    background: #d5d5d5;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -22px;
+    }
+    &:before, &:after {
+
+    content: "";
+    }
+  }
+}
+
+/*--Block Grid 2 --*/
+
+.section7BlockGrid2{
+  margin-bottom: calc(30px);
+  margin-top: calc(30px);
+  //width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  li:last-child{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  }
+}
+
+.testi .section7BlockGrid2Img>img{
+  border-radius: 100%;
+  margin: 0 auto 1.25em;
+  width: 120px;
+  height: 120px;
+}
+
+
+/* Footer
+---------------------------------------------------------------------------------------------------- */
+
 
 
 
