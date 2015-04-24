@@ -93,6 +93,10 @@ $section7Bg:#ECF4FB;
 
 /*--- Section 8--*/
 
+/*--- Footer--*/
+$dividerFooter: #d4d4d6;
+
+
 /* sitewide
 ---------------------------------------------------------- */
 
@@ -486,7 +490,7 @@ color: $black;
   left: -36px;
   border-left-width: 15px;
   border-left-color: transparent;
-  padding: 1.5px 0 0 0;
+  padding: 1px 0 0 0;
   }
 
   &:after{
@@ -511,7 +515,7 @@ color: $black;
 p.ribbon {
   color: #fffffa;
   clear: both;
-  font-size: 29px;
+  font-size: calc(24px);
   font-weight: 700;
   background: $ribbon;
   line-height: inherit;
@@ -555,13 +559,13 @@ ol ol {
     padding: 0em 0em 0em 5em;
     *padding: .4em;
     margin: 0em 0 0em 2.5em;
-    //background: #ddd;
+    
     color: $pColor;
     font-size: calc(20px);
     text-decoration: none;
     transition: none;  
     
-    height:100px;
+    //height:100px;
     text-align: left;
 
 }
@@ -729,6 +733,10 @@ ol ol {
   margin-left: auto;
   margin-right: auto;
 
+    blockquote{
+    border-left: 0;
+  }
+
   li:last-child{
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -743,14 +751,92 @@ ol ol {
 }
 
 
+
+/* Section 8
+---------------------------------------------------------------------------------------------------- */
+.report1{
+  //height: 200px;
+}
+
+.priceList ul{
+  list-style: none;
+  text-align: left;
+  font-size: calc(18px);
+  color: $pColor;
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: calc(20px);
+  li{
+      
+      position: relative;
+      display: block;
+      padding-left: calc(50px);
+      margin-bottom: 20px;
+     
+
+      &:before{
+        content: "\003e \003e";
+        color:#ed6409;
+        position: absolute;
+        left: calc(0px);
+        top: -5px;
+        font-size: calc(25px);
+      }
+
+      
+      
+    }
+
+  }
+
+.mbg{
+  box-shadow: 0 0 15px $box;
+  //padding-top: calc(30px);
+  padding-bottom: calc(10px);
+  margin-bottom: calc(40px);
+  margin-top:calc(40px);
+
+  .text
+  {
+  width: 90%;
+  margin:auto;
+  }
+}
+
+
 /* Footer
 ---------------------------------------------------------------------------------------------------- */
 
+.footerDivider{
+  border-bottom-color: $dividerFooter;
+  border-bottom-width: calc(10px);
+  
+    &:before {
+      
+       border-bottom: calc(40px) solid white;
+      border-left-width: calc(40px);
+      border-right-width: calc(40px);
+      margin-top:-40px;
+    }
 
+  
+    &:after {
+    
+    border-bottom: calc(40px) solid $dividerFooter;
+    border-left-width: calc(40px);
+    border-right-width: calc(40px);
+    margin-top: -40px;
+    
+    }
+  }
 
+.footer{
+ margin-top:2rem;
+ margin-bottom: 8rem;
+ margin-left: 2rem;
+ color: $pColor;
+}
 
-/* Footer
----------------------------------------------------------------------------------------------------- */
 
 .site-footer {	
 	color: #999999;
