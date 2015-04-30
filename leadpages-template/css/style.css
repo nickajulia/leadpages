@@ -6845,6 +6845,7 @@ th.hide-for-touch {
 /*--- Font Variables--*/
 /*--- Other By section--*/
 /*--- Section 2--*/
+/*--- Section 3--*/
 /*--- Section 4--*/
 /*--- Section 5--*/
 /*--- Section 7--*/
@@ -7120,6 +7121,68 @@ p {
 .section3cRight {
   margin-bottom: 2rem;
   margin-top: 5rem; }
+
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  overflow: hidden; }
+
+.section3BlockGridWrap {
+  width: 95%;
+  margin: auto; }
+
+.section3BlockGrid {
+  display: block;
+  padding: 0;
+  margin: 0 -5px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .section3BlockGrid:before, .section3BlockGrid:after {
+    content: " ";
+    display: table; }
+  .section3BlockGrid:after {
+    clear: both; }
+  .section3BlockGrid > li {
+    display: block;
+    float: left;
+    height: auto;
+    padding: 0 5px 10px; }
+  .section3BlockGrid > li {
+    list-style: none;
+    padding: 0 5px 10px;
+    width: 25%; }
+    .section3BlockGrid > li:nth-of-type(1n) {
+      clear: none; }
+    .section3BlockGrid > li:nth-of-type(4n+1) {
+      clear: both; }
+  .section3BlockGrid li {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .section3BlockGrid li p {
+      margin: 0;
+      padding: 0; }
+
+.section3GridItem {
+  border: solid 2px #ECF4FF;
+  height: 100%; }
+  .section3GridItem .padding {
+    padding: 15px; }
 
 /* Section4
 ---------------------------------------------------------------------------------------------------- */
