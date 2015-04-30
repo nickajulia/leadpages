@@ -439,6 +439,41 @@ color: $black;
   border-top: 1px solid $section2Border;
 }
 
+#section2 { 
+  .testi p {
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 12px;
+    text-align: center
+    }
+
+  blockquote {
+    border-left: 0;
+    //color: #999;
+    font-size: 15px;
+    //font-style: italic;
+    line-height: 1.5em;
+    margin: 2em auto 0;
+    &:before{
+      content: "";
+    width: 80px;
+    height: 1px;
+    background: #d5d5d5;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -22px;
+    }
+    &:before, &:after {
+
+      content: "";
+      }
+    }
+}
+
+
+
+
 
 
 /* Section3
@@ -719,6 +754,14 @@ ol ol {
 /* Section 7
 ---------------------------------------------------------------------------------------------------- */
 
+.section7a{
+  margin-top:calc(30px);
+  margin-bottom: calc(30px);
+  padding-top: calc(30px);
+  padding-bottom: calc(30px);
+
+}
+
 
 
 
@@ -753,6 +796,57 @@ ol ol {
     // This controls whether or not base styles come through, set to false to leave out.
     $base-style: true
   );
+}
+
+.section7BlockGrid3{
+  @include block-grid(
+    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
+    // Available options: 1-12 by default, and false.
+    $per-row: 3,
+
+    // This controls how much space is between each item in the block grid.
+    // Use a variable or any pixel or em values.
+    $spacing: 10px,
+
+    // This controls whether or not base styles come through, set to false to leave out.
+    $base-style: true
+  );
+    margin-bottom: calc(30px);
+    margin-top: calc(30px);
+}
+.section7BlockGrid4{
+  @include block-grid(
+    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
+    // Available options: 1-12 by default, and false.
+    $per-row: 2,
+
+    // This controls how much space is between each item in the block grid.
+    // Use a variable or any pixel or em values.
+    $spacing: 10px,
+
+    // This controls whether or not base styles come through, set to false to leave out.
+    $base-style: true
+  );
+
+  margin-bottom: calc(30px);
+  margin-top: calc(30px);
+}
+.section7BlockGrid5{
+  @include block-grid(
+    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
+    // Available options: 1-12 by default, and false.
+    $per-row: 2,
+
+    // This controls how much space is between each item in the block grid.
+    // Use a variable or any pixel or em values.
+    $spacing: $block-grid-default-spacing,
+
+    // This controls whether or not base styles come through, set to false to leave out.
+    $base-style: true
+  );
+
+  margin-bottom: calc(30px);
+  margin-top: calc(30px);
 }
 
 /*--Both Grids Section7  --*/
@@ -858,6 +952,10 @@ ol ol {
   width: 120px;
   height: 120px;
 }
+
+
+
+/*--Block Grid 3 --*/
 
 
 

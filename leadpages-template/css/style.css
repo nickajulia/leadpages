@@ -7116,6 +7116,28 @@ p {
   border-bottom-color: #d4d4d4;
   border-top: 1px solid #d4d4d4; }
 
+#section2 .testi p {
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-size: 12px;
+  text-align: center; }
+#section2 blockquote {
+  border-left: 0;
+  font-size: 15px;
+  line-height: 1.5em;
+  margin: 2em auto 0; }
+  #section2 blockquote:before {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background: #d5d5d5;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -22px; }
+  #section2 blockquote:before, #section2 blockquote:after {
+    content: ""; }
+
 /* Section3
 ---------------------------------------------------------------------------------------------------- */
 .section3cRight {
@@ -7342,6 +7364,12 @@ ol ol {
 
 /* Section 7
 ---------------------------------------------------------------------------------------------------- */
+.section7a {
+  margin-top: calc(30px);
+  margin-bottom: calc(30px);
+  padding-top: calc(30px);
+  padding-bottom: calc(30px); }
+
 .section7BlockGrid1 {
   display: block;
   padding: 0;
@@ -7386,6 +7414,81 @@ ol ol {
     .section7BlockGrid2 > li:nth-of-type(1n) {
       clear: none; }
     .section7BlockGrid2 > li:nth-of-type(1n+1) {
+      clear: both; }
+
+.section7BlockGrid3 {
+  display: block;
+  padding: 0;
+  margin: 0 -5px;
+  margin-bottom: calc(30px);
+  margin-top: calc(30px); }
+  .section7BlockGrid3:before, .section7BlockGrid3:after {
+    content: " ";
+    display: table; }
+  .section7BlockGrid3:after {
+    clear: both; }
+  .section7BlockGrid3 > li {
+    display: block;
+    float: left;
+    height: auto;
+    padding: 0 5px 10px; }
+  .section7BlockGrid3 > li {
+    list-style: none;
+    padding: 0 5px 10px;
+    width: 33.3333333333%; }
+    .section7BlockGrid3 > li:nth-of-type(1n) {
+      clear: none; }
+    .section7BlockGrid3 > li:nth-of-type(3n+1) {
+      clear: both; }
+
+.section7BlockGrid4 {
+  display: block;
+  padding: 0;
+  margin: 0 -5px;
+  margin-bottom: calc(30px);
+  margin-top: calc(30px); }
+  .section7BlockGrid4:before, .section7BlockGrid4:after {
+    content: " ";
+    display: table; }
+  .section7BlockGrid4:after {
+    clear: both; }
+  .section7BlockGrid4 > li {
+    display: block;
+    float: left;
+    height: auto;
+    padding: 0 5px 10px; }
+  .section7BlockGrid4 > li {
+    list-style: none;
+    padding: 0 5px 10px;
+    width: 50%; }
+    .section7BlockGrid4 > li:nth-of-type(1n) {
+      clear: none; }
+    .section7BlockGrid4 > li:nth-of-type(2n+1) {
+      clear: both; }
+
+.section7BlockGrid5 {
+  display: block;
+  padding: 0;
+  margin: 0 0;
+  margin-bottom: calc(30px);
+  margin-top: calc(30px); }
+  .section7BlockGrid5:before, .section7BlockGrid5:after {
+    content: " ";
+    display: table; }
+  .section7BlockGrid5:after {
+    clear: both; }
+  .section7BlockGrid5 > li {
+    display: block;
+    float: left;
+    height: auto;
+    padding: 0 0 0; }
+  .section7BlockGrid5 > li {
+    list-style: none;
+    padding: 0 0 0;
+    width: 50%; }
+    .section7BlockGrid5 > li:nth-of-type(1n) {
+      clear: none; }
+    .section7BlockGrid5 > li:nth-of-type(2n+1) {
       clear: both; }
 
 /*--Both Grids Section7  --*/
@@ -7453,6 +7556,7 @@ ol ol {
   width: 120px;
   height: 120px; }
 
+/*--Block Grid 3 --*/
 /* Section 8
 ---------------------------------------------------------------------------------------------------- */
 .priceList ul {
