@@ -32,11 +32,10 @@ $bulletBtm:#0068D9;
 
 $optinWrapBg:#f3f3f3;
 $optinWrapBorder:#e5e4e4;
-$buttonColor2:#ffb400;
-$buttonColor2Hover:#f9b51f;
-$buttonColorGradient:#FF7400;
-$buttonColor2Border:#ffbf27;
-$buttonColor2BorderHover:#ffbf27;
+$buttonColor2:#33D575;
+$buttonColor2Hover:#47b372;
+$buttonColor2Border:#47b371;
+$buttonColor2BorderHover:#087E38;
 
 
 /*--- Block Grid --*/
@@ -91,6 +90,19 @@ $section4Border:#d4d4d5;
 $section5Bg:#ECF4FE;
 $ribbon: #0E54A7;
 $ribbonAfter:#063165;
+
+
+/* --- Section 5 Ribbon 2 ----*/
+
+$freshcolor   : #47b372;
+$darkcolor    : #192238;
+
+$basefont : "Times New Roman", times, serif;
+$basefontsize : 24;
+$baselineheight : 1.5;
+$baseline-unit: $basefontsize * $baselineheight;
+$basefontpercent: $basefontsize/16 * 100;
+
 
 
 /*--- Section 7--*/
@@ -387,7 +399,7 @@ color: $black;
     border: solid transparent;
     pointer-events: none;
     top: inherit;
-    left: 48%;
+    left: 40%;
     }
 
 }
@@ -485,7 +497,7 @@ color: $black;
   margin-top:5rem;
 }
 
-
+/*--- Remove for now 
 .flexbox{
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -493,6 +505,8 @@ color: $black;
     overflow: hidden;
     
 }
+
+----*/
 
 .section3BlockGridWrap{
   width: 95%;
@@ -504,7 +518,7 @@ color: $black;
   @include block-grid(
     // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
     // Available options: 1-12 by default, and false.
-    $per-row: 4,
+    $per-row: 1,
 
     // This controls how much space is between each item in the block grid.
     // Use a variable or any pixel or em values.
@@ -513,24 +527,24 @@ color: $black;
 
     // This controls whether or not base styles come through, set to false to leave out.
     $base-style: true
-
+    
   );
 
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    align-items:flex-end;
+    
 
   li {
-    height: 100%;
-    display: flex;
-    align-items:stretch;
+    //height: 100%;
+    //display: flex;
+    //align-items:stretch;
 
     p{
       margin:0;
       padding:0;
     }
+  }
+
+  h2{
+    font-size: calc(27px);
   }
 
 }
@@ -539,8 +553,9 @@ color: $black;
 
 .section3GridItem
 {
-  border: solid 2px $Section3GridItemBorder;
+  //border: solid 2px $Section3GridItemBorder;
   height: 100%;
+ 
 
   .padding{
     padding:15px;
@@ -596,10 +611,10 @@ color: $black;
 }
 
 .ribbon-wrapper {
-  overflow: hidden;
+  //overflow: hidden;
   position: relative;
  
-  right: calc(-35px);
+  //right: calc(-15px);
   float: right;
   margin-bottom: 22px;
   //margin-top: -22px;
@@ -614,15 +629,15 @@ color: $black;
   font-size: 30px;
   font-weight: 700;
   background: $ribbon;
-  height: calc(55px);
+  //height: calc(55px);
   padding: 7px 22px;
   position: relative;
   float: right;
   max-width: 100%;
-  width: 90%;
-  white-space: nowrap;
+  width: 100%;
+  white-space: normal;
  
-
+/*
   &:before{
 
   content: "";
@@ -653,6 +668,7 @@ color: $black;
   border-color: transparent $ribbonAfter;
   border-style: dashed solid;
   }
+*/
 
 }
 
@@ -666,11 +682,112 @@ p.ribbon {
   margin: auto;
   overflow: hidden;
   width: 100%;
-  max-width: 95%;
-  white-space: nowrap;
+  max-width: 100%;
+  white-space: nomral;
   text-overflow: ellipsis;
   text-align: center;
 }
+
+
+
+
+/* --- Ribbon 2 ----*/
+
+
+
+
+
+.rowRibbon {
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.blockRibbon {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  position: relative;
+}
+
+.rowRibbon h1 {
+  position: relative;
+  display: inline-block;
+  font-family: $basefont;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+
+  &:after,
+  &:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -.5em;
+    width: 1em;
+    height: 100%;
+    background-color: lighten($freshcolor,10);
+    pointer-events:none;
+  }
+
+  &:after {
+    right: -.57em;
+    z-index: -1;
+  }
+
+  &:before {
+    bottom: auto;
+    top: -.5em;
+    left: -.57em;
+    z-index: -1;
+  }
+
+  a {
+    display: inline-block;
+    position: relative;
+    padding: .15em .75em;
+    text-decoration: none;
+    color: darken($darkcolor,0);
+    background-color: lighten($freshcolor,20);
+
+
+    &:after,
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: -.5em;
+      left: -.05em;
+      pointer-events: none;
+      -webkit-mask: none;
+    }
+
+    &:before {
+      bottom: auto;
+      top: -.5em;
+      border-bottom: .5em solid darken($freshcolor,10);
+      border-left: .5em solid transparent;
+    }
+
+    &:after {
+      left:  auto;
+      right: -.05em;
+      border-top: .5em solid darken($freshcolor,10);
+      border-right: .5em solid transparent;
+    }
+  }
+
+}
+
+
+
+
 
 /* Section6
 ---------------------------------------------------------------------------------------------------- */
@@ -700,9 +817,9 @@ ol ol {
 .rectangle-list2 li{
     position: relative;
     display: block;
-    padding: 0em 0em 0em 5em;
-    *padding: .4em;
-    margin: 0em 0 0em 2.5em;
+    padding: 0em 0em 0em 3em;
+    //*padding: .4em;
+    margin-bottom: 20px;
     
     color: $pColor;
     font-size: calc(20px);
@@ -802,7 +919,7 @@ ol ol {
   @include block-grid(
     // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
     // Available options: 1-12 by default, and false.
-    $per-row: 3,
+    $per-row: 1,
 
     // This controls how much space is between each item in the block grid.
     // Use a variable or any pixel or em values.
@@ -818,7 +935,7 @@ ol ol {
   @include block-grid(
     // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
     // Available options: 1-12 by default, and false.
-    $per-row: 2,
+    $per-row: 1,
 
     // This controls how much space is between each item in the block grid.
     // Use a variable or any pixel or em values.
@@ -835,7 +952,7 @@ ol ol {
   @include block-grid(
     // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
     // Available options: 1-12 by default, and false.
-    $per-row: 2,
+    $per-row: 1,
 
     // This controls how much space is between each item in the block grid.
     // Use a variable or any pixel or em values.
@@ -996,20 +1113,36 @@ ol ol {
 
   }
 
+  /* Section 9
+---------------------------------------------------------------------------------------------------- */
+
+
 .mbg{
   box-shadow: 0 0 15px $box;
-  //padding-top: calc(30px);
-  padding-bottom: calc(10px);
+  padding-top: calc(20px);
+  padding-bottom: calc(20px);
   margin-bottom: calc(40px);
   margin-top:calc(40px);
-
-  .text
-  {
-  width: 90%;
-  margin:auto;
-  }
 }
 
+.mgbText
+  {
+  
+  }
+ 
+  .mbgText1{
+    font-size: 30px;
+   
+  }
+
+ .mbgText3{
+  font-size: 30px;
+  color:#0E54A5;
+  }
+
+.mgbImg{
+
+}
 
 /* Footer
 ---------------------------------------------------------------------------------------------------- */
