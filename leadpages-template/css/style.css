@@ -1,6 +1,5 @@
 /*Style.scss*/
 @import url(bower_components/normalize-css/normalize.css);
-@import url(bower_components/bootstrap/dist/css/bootstrap.css);
 meta.foundation-version {
   font-family: "/5.5.1/"; }
 
@@ -7778,19 +7777,6 @@ ol ol {
   .optinRightText {
     float: left; }
 
-  /*-- section 2 --*/
-  [class*="block-grid-"] {
-    margin: 0 2rem; }
-
-  .section3Img {
-    margin-top: calc(100px); }
-
-  #section3-right ol {
-    margin-top: calc(100px); }
-
-  .section3b {
-    margin-top: calc(30px); }
-
   /* ---------ribbons */
   .ribbon-wrapper {
     overflow: hidden;
@@ -7843,6 +7829,19 @@ ol ol {
 
   p.ribbon {
     font-size: 24px; }
+
+  /*-- section 2 --*/
+  [class*="block-grid-"] {
+    margin: 0 2rem; }
+
+  .section3Img {
+    margin-top: calc(100px); }
+
+  #section3-right ol {
+    margin-top: calc(100px); }
+
+  .section3b {
+    margin-top: calc(30px); }
 
   /*--- Section 3 grid -----*/
   .section3BlockGrid {
@@ -8045,12 +8044,6 @@ ol ol {
   .mbgText {
     padding-top: 30px; } }
 /* min-width 641px, medium screens */
-@media only screen and (min-width: 90.063em) {
-  .hero-right-container {
-    max-width: 50rem; }
-
-  #section3-right ol.rectangle-list li:before {
-    left: calc(10px); } }
 /* min-width 1441px, xlarge screens */
 
 /*# sourceMappingURL=style.css.map */
