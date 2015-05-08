@@ -32,10 +32,10 @@ $bulletBtm:#0068D9;
 
 $optinWrapBg:#f3f3f3;
 $optinWrapBorder:#e5e4e4;
-$buttonColor2:#33D575;
-$buttonColor2Hover:#47b372;
-$buttonColor2Border:#47b371;
-$buttonColor2BorderHover:#087E38;
+$buttonColor2:#ec8737;
+$buttonColor2Hover:#ec8737;
+$buttonColor2Border:#c38348;
+$buttonColor2BorderHover:#c38348;
 
 
 /*--- Block Grid --*/
@@ -58,6 +58,7 @@ $bulletLine:#d4d4d3;
 
 $Oswald: Oswald, sans-serif;
 $Lato: Lato,sans-serif;
+$bodyFamily: 'Noto Sans', Arial, helvetica, sans-serif;
 $h1Family: 'Noto Sans', Arial, helvetica, sans-serif;
 $h2Family: 'Noto Sans', Arial, helvetica, sans-serif;
 $h3Family: 'Noto Sans', Arial, helvetica, sans-serif;
@@ -71,11 +72,11 @@ $pColor:#595757;
 
 /*--- Other By section--*/
 $headerBtmBorder:transparent;
-$divider1: #ECF4FC;
+$divider1: #47a562;
 
 
 /*--- Section 2--*/
-$section2Bg:#ECF4FD;
+$section2Bg:#ffffff;
 $section2Border:#d4d4d4;
 
 
@@ -83,8 +84,8 @@ $section2Border:#d4d4d4;
 $Section3GridItemBorder:#ECF4FF;
 
 /*--- Section 4--*/
-$section4Bg:$lightGrey;
-$section4Border:#d4d4d5;
+$section4Bg:$white;
+$section4Border:#b1ccb6;
 
 /*--- Section 5--*/
 $section5Bg:#ECF4FE;
@@ -167,11 +168,22 @@ img {
 	max-width: 100%;
 }
 
+.imgLeft{
+  float: left;
+  margin: 20px;
+}
+
+.imgRight{
+   float: right;
+  margin-left: 20px;
+}
+
+
 body {
 	background: #ffffff;
 	color: #111111;
 	font-size: 18px;
-	font-family: 'Georgia', serif;
+	font-family: $bodyFamily;
 	text-align: center;
 	margin:auto;
 }
@@ -192,7 +204,9 @@ body {
 .mg-btm-sm{
   margin-bottom:2rem;
 }
-
+.mg-btm-sM{
+  margin-bottom: 3.5rem;
+}
 
 .mg-btm-md{
   margin-bottom:5rem;
@@ -385,8 +399,19 @@ color: $black;
   margin-bottom: calc(15px);
 }
 	
+#headerRight a{
+  color: black;
+  &:hover{
+    color:black;
+  }
+}  
 /* Section1
 ---------------------------------------------------------------------------------------------------- */
+.section1{
+  background: url(../img/vidBg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
 .divider{
 
   border-bottom-style: solid;
@@ -426,16 +451,7 @@ color: $black;
   }
 
 
-.compHands{
-  position: absolute;
-  bottom:0;
-  right:4%;
-  z-index: -1;
-  height:calc(550px);
-  max-width: 28%;
-  margin-left: 10px;
-  filter:grayscale(1) opacity(.5);
-}
+
 
 /* Section2
 ---------------------------------------------------------------------------------------------------- */
@@ -447,8 +463,8 @@ color: $black;
 
 .section2Wrap{
   background: $section2Bg;
-  border-bottom-color: $section2Border ;
-  border-top: 1px solid $section2Border;
+  border-bottom-color: transparent; ;
+  //border-top: 1px solid $section2Border;
 }
 
 #section2 { 
@@ -483,7 +499,9 @@ color: $black;
     }
 }
 
-
+#section2Text p{
+  line-height: 22px;
+}
 
 
 
@@ -570,7 +588,7 @@ color: $black;
 .section4Wrap{
   background: $section4Bg;
   border-bottom-color: $section4Border;
-  border-top: 1px solid $section4Border;
+  //border-top: 1px solid $section4Border;
 }
 
 .grayscale {
