@@ -44,6 +44,22 @@
     }
   }
 
+
+  .section4bBlockGrid {
+  @include block-grid(
+    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
+    // Available options: 1-12 by default, and false.
+    $per-row: 5,
+
+    // This controls how much space is between each item in the block grid.
+    // Use a variable or any pixel or em values.
+    $spacing: 15px,
+
+    // This controls whether or not base styles come through, set to false to leave out.
+    $base-style: true
+  );
+}
+
 .section4Divider{
   border-bottom-color: $section4Border;
   border-bottom-width: calc(10px);
@@ -222,7 +238,7 @@ p.ribbon {
 
 
 
-/*-- section 2 --*/
+/*-- section 3 --*/
 
 [class*="block-grid-"] {
   margin: 0 2rem;
@@ -255,7 +271,7 @@ margin-top: calc(100px);
    @include block-grid(
     // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
     // Available options: 1-12 by default, and false.
-    $per-row: 4,
+    $per-row:3,
 
     // This controls how much space is between each item in the block grid.
     // Use a variable or any pixel or em values.
@@ -272,6 +288,12 @@ margin-top: calc(100px);
     letter-spacing: -1px;
 
    }
+
+.section3GridItem {
+  
+  min-height: 680px;
+}
+
 
 }
 

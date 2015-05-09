@@ -6895,6 +6895,12 @@ img {
   float: right;
   margin-left: 20px; }
 
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
 body {
   background: #ffffff;
   color: #111111;
@@ -6994,8 +7000,9 @@ body {
 h1 {
   font-family: "Noto Sans", Arial, helvetica, sans-serif;
   font-size: calc(36px);
-  font-weight: 700;
-  color: #272727; }
+  font-weight: 400;
+  color: #272727;
+  line-height: 40px; }
 
 h2 {
   color: #272727;
@@ -7079,7 +7086,8 @@ p {
   margin-bottom: calc(15px); }
 
 #headerRight a {
-  color: black; }
+  color: black;
+  font-family: "Noto Sans", Arial, helvetica, sans-serif; }
   #headerRight a:hover {
     color: black; }
 
@@ -7088,6 +7096,9 @@ p {
 .section1 {
   background: url(../img/vidBg.jpg) center center no-repeat;
   background-size: cover; }
+
+#section1Headline h1 {
+  color: white; }
 
 .divider {
   border-bottom-style: solid; }
@@ -7165,10 +7176,6 @@ p {
 }
 
 ----*/
-.section3BlockGridWrap {
-  width: 95%;
-  margin: auto; }
-
 .section3BlockGrid {
   display: block;
   padding: 0;
@@ -7191,16 +7198,17 @@ p {
       clear: none; }
     .section3BlockGrid > li:nth-of-type(1n+1) {
       clear: both; }
-  .section3BlockGrid li p {
-    margin: 0;
-    padding: 0; }
+  .section3BlockGrid .section3GridItem {
+    background-color: rgba(40, 146, 232, 0.15); }
+    .section3BlockGrid .section3GridItem p {
+      margin: 0;
+      padding: 0; }
   .section3BlockGrid h2 {
     font-size: calc(27px); }
 
-.section3GridItem {
-  height: 100%; }
-  .section3GridItem .padding {
-    padding: 15px; }
+.section3GridItem img {
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
 /* Section4
 ---------------------------------------------------------------------------------------------------- */
@@ -7211,6 +7219,29 @@ p {
 .grayscale {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%); }
+
+.section4bBlockGrid {
+  display: block;
+  padding: 0;
+  margin: 0 -5px; }
+  .section4bBlockGrid:before, .section4bBlockGrid:after {
+    content: " ";
+    display: table; }
+  .section4bBlockGrid:after {
+    clear: both; }
+  .section4bBlockGrid > li {
+    display: block;
+    float: left;
+    height: auto;
+    padding: 0 5px 10px; }
+  .section4bBlockGrid > li {
+    list-style: none;
+    padding: 0 5px 10px;
+    width: 33.3333333333%; }
+    .section4bBlockGrid > li:nth-of-type(1n) {
+      clear: none; }
+    .section4bBlockGrid > li:nth-of-type(3n+1) {
+      clear: both; }
 
 #section4bGrid ul li img {
   height: 75px; }
@@ -7232,6 +7263,9 @@ p {
 ---------------------------------------------------------------------------------------------------- */
 .section5Bg {
   background-color: #ECF4FE; }
+
+.section5Item h1 {
+  color: #5790ed; }
 
 .ribbon-wrapper {
   position: relative;
@@ -7725,6 +7759,29 @@ ol ol {
       border-right-width: calc(40px);
       margin-top: -12px; }
 
+  .section4bBlockGrid {
+    display: block;
+    padding: 0;
+    margin: 0 -7.5px; }
+    .section4bBlockGrid:before, .section4bBlockGrid:after {
+      content: " ";
+      display: table; }
+    .section4bBlockGrid:after {
+      clear: both; }
+    .section4bBlockGrid > li {
+      display: block;
+      float: left;
+      height: auto;
+      padding: 0 7.5px 15px; }
+    .section4bBlockGrid > li {
+      list-style: none;
+      padding: 0 7.5px 15px;
+      width: 20%; }
+      .section4bBlockGrid > li:nth-of-type(1n) {
+        clear: none; }
+      .section4bBlockGrid > li:nth-of-type(5n+1) {
+        clear: both; }
+
   .section4Divider {
     border-bottom-color: #b1ccb6;
     border-bottom-width: calc(10px); }
@@ -7840,7 +7897,7 @@ ol ol {
   p.ribbon {
     font-size: 24px; }
 
-  /*-- section 2 --*/
+  /*-- section 3 --*/
   [class*="block-grid-"] {
     margin: 0 2rem; }
 
@@ -7871,14 +7928,16 @@ ol ol {
     .section3BlockGrid > li {
       list-style: none;
       padding: 0 5px 10px;
-      width: 25%; }
+      width: 33.3333333333%; }
       .section3BlockGrid > li:nth-of-type(1n) {
         clear: none; }
-      .section3BlockGrid > li:nth-of-type(4n+1) {
+      .section3BlockGrid > li:nth-of-type(3n+1) {
         clear: both; }
     .section3BlockGrid h2 {
       font-size: 21px;
       letter-spacing: -1px; }
+    .section3BlockGrid .section3GridItem {
+      min-height: 680px; }
 
   .mbgText {
     padding-top: 10px; }
@@ -8050,6 +8109,8 @@ ol ol {
   .section3BlockGrid h2 {
     font-size: 27px;
     letter-spacing: normal; }
+  .section3BlockGrid .section3GridItem {
+    min-height: 630px; }
 
   .mbgText {
     padding-top: 30px; } }

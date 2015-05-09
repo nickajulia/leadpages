@@ -82,6 +82,7 @@ $section2Border:#d4d4d4;
 
 /*--- Section 3--*/
 $Section3GridItemBorder:#ECF4FF;
+$section3GridBg:rgba(40, 146, 232, 0.15);
 
 /*--- Section 4--*/
 $section4Bg:$white;
@@ -91,6 +92,7 @@ $section4Border:#b1ccb6;
 $section5Bg:#ECF4FE;
 $ribbon: #0E54A7;
 $ribbonAfter:#063165;
+$section5H1:#5790ed;
 
 
 /* --- Section 5 Ribbon 2 ----*/
@@ -178,6 +180,14 @@ img {
   margin-left: 20px;
 }
 
+
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+}
 
 body {
 	background: #ffffff;
@@ -300,8 +310,9 @@ background-image: linear-gradient(to top, rgba(0, 0, 0, 0.001), #ffffff);
 h1{
 	font-family: $h1Family;
 	font-size: calc(36px);
-  font-weight: 700;
+  font-weight: 400;
 	color:$h1Color;
+  line-height: 40px;
 }
 
 h2{
@@ -401,6 +412,7 @@ color: $black;
 	
 #headerRight a{
   color: black;
+  font-family: $bodyFamily;
   &:hover{
     color:black;
   }
@@ -410,6 +422,13 @@ color: $black;
 .section1{
   background: url(../img/vidBg.jpg) center center no-repeat;
   background-size: cover;
+}
+
+#section1Headline{
+    h1{
+     color:white; 
+    }
+  
 }
 
 .divider{
@@ -526,10 +545,7 @@ color: $black;
 
 ----*/
 
-.section3BlockGridWrap{
-  width: 95%;
-  margin:auto;
-}
+
 
 .section3BlockGrid{
 
@@ -550,10 +566,8 @@ color: $black;
 
     
 
-  li {
-    //height: 100%;
-    //display: flex;
-    //align-items:stretch;
+  .section3GridItem{
+    background-color: $section3GridBg;
 
     p{
       margin:0;
@@ -569,16 +583,14 @@ color: $black;
 
 
 
-.section3GridItem
-{
-  //border: solid 2px $Section3GridItemBorder;
-  height: 100%;
- 
 
-  .padding{
-    padding:15px;
+
+.section3GridItem img
+{
+ padding-top:5px;
+ padding-bottom:5px;
   }
-}
+
 
 
 /* Section4
@@ -594,6 +606,22 @@ color: $black;
 .grayscale {
   filter: grayscale(100%);
 }
+
+.section4bBlockGrid {
+ @include block-grid(
+    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
+    // Available options: 1-12 by default, and false.
+    $per-row: 3,
+
+    // This controls how much space is between each item in the block grid.
+    // Use a variable or any pixel or em values.
+    $spacing: 10px,
+
+    // This controls whether or not base styles come through, set to false to leave out.
+    $base-style: true
+  );
+}
+
 
 #section4bGrid ul li img{
   height: 75px;
@@ -627,6 +655,16 @@ color: $black;
 .section5Bg{
   background-color: $section5Bg;
 }
+
+.section5Item{
+
+  h1{
+    color:$section5H1;
+  }
+
+
+}
+
 
 .ribbon-wrapper {
   //overflow: hidden;
@@ -802,6 +840,8 @@ p.ribbon {
   }
 
 }
+
+
 
 
 
