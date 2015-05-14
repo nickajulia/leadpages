@@ -1,5 +1,4 @@
 /*Style.scss*/
-@import url(bower_components/normalize-css/normalize.css);
 meta.foundation-version {
   font-family: "/5.5.1/"; }
 
@@ -7132,7 +7131,7 @@ p {
   text-align: left; }
 
 .section2Wrap {
-  background: #ffffff;
+  background: #fffffe;
   border-bottom-color: transparent; }
 
 #section2 .testi p {
@@ -7199,7 +7198,7 @@ p {
     .section3BlockGrid > li:nth-of-type(1n+1) {
       clear: both; }
   .section3BlockGrid .section3GridItem {
-    background-color: rgba(40, 146, 232, 0.15); }
+    background-color: #DEEEFB; }
     .section3BlockGrid .section3GridItem p {
       margin: 0;
       padding: 0; }
@@ -7213,7 +7212,7 @@ p {
 /* Section4
 ---------------------------------------------------------------------------------------------------- */
 .section4Wrap {
-  background: #ffffff;
+  background: #fffffe;
   border-bottom-color: #b1ccb6; }
 
 .grayscale {
@@ -7254,7 +7253,7 @@ p {
     border-left-width: calc(40px);
     border-right-width: calc(40px); }
   .section4Divider:after {
-    border-top: calc(40px) solid #ffffff;
+    border-top: calc(40px) solid #fffffe;
     border-left-width: calc(40px);
     border-right-width: calc(40px);
     margin-top: -12px; }
@@ -7790,7 +7789,7 @@ ol ol {
       border-left-width: calc(40px);
       border-right-width: calc(40px); }
     .section4Divider:after {
-      border-top: calc(40px) solid #ffffff;
+      border-top: calc(40px) solid #fffffe;
       border-left-width: calc(40px);
       border-right-width: calc(40px);
       margin-top: -12px; }

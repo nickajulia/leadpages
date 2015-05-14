@@ -1,71 +1,77 @@
 {
-	"id": "Get the Guide",
-	"name": "Get the Guide", 
+	"id": "MyCareertopia",
+	"name": "MyCareertopia", 
 	"mobile": true, 
-	"notes": "version 1.101", 
+	"notes": "version 1.001", 
 	"syntax": 4, 
-	"version": 1.101,
+	"version": 1.001,
 	"style": {
 		"html": "",
 		"replacements": [
 
+
         {
               "type": "color",
-              "name": "Header Background Overlay Color",
-              "find": "#00000A"
+              "name": "Section1 border",
+              "find": "#47a562"
+          },
+        {
+              "type": "color",
+              "name": "section2 and 4 Bg",
+              "find": "#fffffe"
           },
 
         {
               "type": "color",
-              "name": "Header Bullet Square Color",
-              "find": "#666666"
+              "name": "Section2 border",
+              "find": "#d4d4d4"
           },
          
           {
               "type": "color",
-              "name": "Section1 Color",
-              "find": "#000001"
+              "name": "Section3GridItemBorder",
+              "find": "#ECF4FF"
           },
+
+           {
+              "type": "color",
+              "name": "section3GridBg",
+              "find": "#DEEEFB"
+          },
+
 			{
               "type": "color",
-              "name": "Section 3 Background Color",
-              "find": "#A9ABAD"
+              "name": "section4Border",
+              "find": "#b1ccb6"
           },
-           {
+
+        {
               "type": "color",
-              "name": "Section 3 Bullet Square Color",
-              "find": "#E00A15"
+              "name": "section5Bg",
+              "find": "#ECF4FE"
           },
-          {
+            {
               "type": "color",
-              "name": "Section 3 Bullet Number Color",
-              "find": "#fffffd"
-          },
-          {
-              "type": "color",
-              "name": "Section 3 Bullet Line Color",
-              "find": "#000002"
-          },
-           {
-              "type": "color",
-              "name": "Buttons Color",
-              "find": "#E00A14"
+              "name": "divider7",
+              "find": "#C8DBEC"
           },
           {
               "type": "color",
-              "name": "Buttons Hover Color",
-              "find": "#E00A13"
+              "name": "section7Bg",
+              "find": "#ECF4FB"
           },
           {
               "type": "color",
-              "name": "Section 7 Link 1 Color",
-              "find": "#656564"
-          },
-          {
-              "type": "color",
-              "name": "Footer Links Color",
+              "name": "Footer Bg",
               "find": "#999999"
+          },
+           {
+              "type": "color",
+              "name": "dividerFooter",
+              "find": "#d4d4d6"
           }
+
+           
 
 
 
@@ -107,53 +113,34 @@
 	"elements": [
 		
         {
-      "id": "site-header",
+      "id": "header",
       "name": "Header Container",
       "type": "container"
         },
-         {
-      "id": "hero-left",
-      "name": "hero-left Container",
-      "type": "container"
-        },
-        {
-      "id": "section3-left",
-      "name": "Section3 left Container",
-      "type": "container"
-        },
-         {
-      "id": "section5-left",
-      "name": "Section5 Headline Container",
-      "type": "container"
-        },
-         {
-      "id": "hero-right",
-      "name": "hero-right Container",
-      "type": "container"
-        },
-        {
-      "id": "section3-right",
-      "name": "section3 right Container",
-      "type": "container"
-        },
-         {
-      "id": "section5-right",
-      "name": "section5 Button Container",
-      "type": "container"
-        },
+       
           {
-      "id": "Section1",
+      "id": "section1",
       "name": "Section 1 Container",
       "type": "container"
         },
           {
-      "id": "Section2",
+      "id": "section2",
       "name": "Section 2 Container",
       "type": "container"
         },
+         {
+      "id": "section2After",
+      "name": "section2After Container",
+      "type": "container"
+        },
           {
-      "id": "Section3",
+      "id": "section3",
       "name": "Section 3 Container",
+      "type": "container"
+        },
+           {
+      "id": "section4",
+      "name": "Section 4 Container",
       "type": "container"
         },
           
@@ -172,254 +159,683 @@
       "name": "Section 7 Container",
       "type": "container"
         },
+         {
+      "id": "Section8",
+      "name": "Section 8 Container",
+      "type": "container"
+        },
+         {
+      "id": "Section9",
+      "name": "Section 9 Container",
+      "type": "container"
+        },
           {
-      "id": "site-footer",
+      "id": "footer",
       "name": "Footer Container",
       "type": "container"
         },
+
+
         {
-      "id": "flag1",
-      "name": "Section1 Flag",
-      "type": "container"
-        },
-         {
-      "id": "flag2",
-      "name": "Section3 Flag",
+      "id": "divider1",
+      "name": "section divider",
       "type": "container"
         },
         {
-      "id": "logos",
-      "name": "Section 2 Logos",
+      "id": "section4Divider",
+      "name": "section divider",
       "type": "container"
         },
         {
-      "id": "section6Testi1",
-      "name": "Section 6 Testimonial 1",
+      "id": "section2AfterDivider1",
+      "name": "section divider",
       "type": "container"
         },
-{
-      "id": "section6Test2",
-      "name": "Section 6 Testimonial 2",
+         {
+      "id": "section2AfterDivider2",
+      "name": "section divider",
       "type": "container"
         },
-{
-      "id": "section6Testi3",
-      "name": "Section 6 Testimonial 3",
-      "type": "container"
-        },
-      
-
-
-
-
-        {
-      "id": "heroTitle",
-      "name": "Hero Title",
-      "type": "text"
-        },
+           {
+        "id": "section5Divider",
+        "name": "section divider",
+        "type": "container"
+          },
          {
-      "id": "heroSub",
-      "name": "Hero Subtitle",
-      "type": "text"
-        },
-
-          {
-      "id": "head-list-title",
-      "name": "Hero List Title",
-      "type": "text"
-        },
-          {
-      "id": "head-list",
-      "name": "Hero List",
-      "type": "text"
-        },
-         {
-      "id": "hero-optin-text",
-      "name": "Hero Optin Text",
-      "type": "text"
-        },
-        {
-      "id": "section1RightHeadline",
-      "name": "Section 1 Right Headline",
-      "type": "text"
-        },
-        {
-      "id": "section1-testimonial-text",
-      "name": "Section 1 Right Testimonial",
-      "type": "text"
-        },
-        {
-      "id": "section2Headline",
-      "name": "Section 2 Headline",
-      "type": "text"
-        },
-          {
-      "id": "section3RightList",
-      "name": "Section 3 List",
-      "type": "text"
-        },
-         {
-      "id": "section3LeftHeadline",
-      "name": "Section 3 Left Headline",
-      "type": "text"
-        },
-        {
-      "id": "section3LeftText",
-      "name": "Section 3 Left Text",
-      "type": "text"
-        },
-         {
-      "id": "section5Headline",
-      "name": "Section 5 Headline",
-      "type": "text"
-        },
-    {
-      "id": "section6TestiText1",
-      "name": "Section 6 Testimonial Text 1",
-      "type": "text"
-        },
-        {
-      "id": "section6TestiText2",
-      "name": "Section 6 Testimonial Text 2",
-      "type": "text"
-        },
-        {
-      "id": "section6TestiText3",
-      "name": "Section 6 Testimonial Text 3",
-      "type": "text"
-        },
-        {
-      "id": "section6TestiQuote1",
-      "name": "Section 6 Testimonial Quote 1",
-      "type": "text"
-        },
-         {
-      "id": "section6TestiQuote2",
-      "name": "Section 6 Testimonial Quote 2",
-      "type": "text"
-        },
-         {
-      "id": "section6TestiQuote3",
-      "name": "Section 6 Testimonial Quote 3",
-      "type": "text"
-        },
-
-
-
-
-   {
-      "id": "optin1",
-      "name": "Hero Optin Button",
-      "type": "link"
-        },
-        {
-      "id": "optin2",
-      "name": "Section5 Optin Button",
-      "type": "link"
-        },
-        {
-      "id": "optin3",
-      "name": "Section7 Optin Button",
-      "type": "link"
-        },
-        {
-      "id": "section7Link1",
-      "name": "Section7 Link1",
-      "type": "link"
-        },
-        {
-      "id": "footerLink1",
-      "name": "Footer Link1",
-      "type": "link"
-        },
-        {
-      "id": "footerLink2",
-      "name": "Footer Link2",
-      "type": "link"
-        },
-        {
-      "id": "footerLink3",
-      "name": "Footer Link3",
-      "type": "link"
-        },
-        {
-      "id": "footerLink4",
-      "name": "Footer Link4",
-      "type": "link"
-        },
-        {
-      "id": "footerLink5",
-      "name": "Footer Link5",
-      "type": "link"
-        },
-
-
-
-
-
-         {
-      "id": "header-bg",
-      "name": "Header Background",
-      "type": "image"
-        },
+        "id": "section7Divider",
+        "name": "section divider",
+        "type": "container"
+          },
             {
-      "id": "site-header-logo",
-      "name": "Logo",
-      "type": "image"
+        "id": "footerDivider",
+        "name": "section divider",
+        "type": "container"
+          },
+        {
+      "id": "Section1OptinWrap",
+      "name": "Section1OptinWrap container",
+      "type": "container"
         },
         {
-      "id": "section2Logo1",
-      "name": "Section2 Logo 1",
-      "type": "image"
+      "id": "Section6OptinWrap",
+      "name": "Section6OptinWrap container",
+      "type": "container"
         },
         {
-      "id": "section2Logo2",
-      "name": "Section2 Logo 2",
-      "type": "image"
+      "id": "Section10bOptinWrap",
+      "name": "Section10bOptinWrap container",
+      "type": "container"
+        },
+
+
+          {
+      "id": "section7aGrid3",
+      "name": "section7aGrid3 container",
+      "type": "container"
+        },
+          {
+      "id": "section7aGrid4",
+      "name": "section7aGrid4 container",
+      "type": "container"
+        },
+          {
+      "id": "section7aGrid5",
+      "name": "section7aGrid5 container",
+      "type": "container"
+        },
+          {
+      "id": "section7aGrid6",
+      "name": "section7aGrid6 container",
+      "type": "container"
+        },
+
+
+
+
+
+
+          {
+      "id": "sectio3BlockGridItem1",
+      "name": "sectio3BlockGridItem1 container",
+      "type": "container"
+        },
+          {
+      "id": "sectio3BlockGridItem2",
+      "name": "sectio3BlockGridItem2 container",
+      "type": "container"
+        },
+          {
+      "id": "sectio3BlockGridItem3",
+      "name": "sectio3BlockGridItem3 container",
+      "type": "container"
         },
         {
-      "id": "section2Logo3",
-      "name": "Section2 Logo 3",
-      "type": "image"
+      "id": "section7aGrid",
+      "name": "section7aGrid container",
+      "type": "container"
+        },
+
+
+        {
+      "id": "section7aGrid2",
+      "name": "section7aGrid2 container",
+      "type": "container"
+        },
+       {
+      "id": "MBG",
+      "name": "MBG container",
+      "type": "container"
+        },
+
+
+
+
+         {
+      "id": "Section10bOptinWrap",
+      "name": "Section10bOptinWrap container",
+      "type": "container"
+        },
+
+
+
+
+        {
+      "id": "section1Headline",
+      "name": "section1Headline text",
+      "type": "text"
+        },
+          {
+      "id": "Section1OptinRightText1",
+      "name": "Section1OptinRightText1 text",
+      "type": "text"
         },
         {
-      "id": "section2Logo4",
-      "name": "Section2 Logo 4",
-      "type": "image"
+      "id": "section1Text",
+      "name": "section1Text text",
+      "type": "text"
+        },
+         {
+      "id": "section2Text1",
+      "name": "section2Text1 text",
+      "type": "text"
+        },
+         {
+      "id": "section2AfterText1",
+      "name": "section2AfterText1 text",
+      "type": "text"
+        },
+        
+
+
+         {
+      "id": "section2AfterItem1Text",
+      "name": "section2AfterItem1Text text",
+      "type": "text"
+        },
+         {
+      "id": "section2AfterItem2Text",
+      "name": "section2AfterItem2Text text",
+      "type": "text"
+        },
+         {
+      "id": "section2AfterItem3Text",
+      "name": "section2AfterItem3Text text",
+      "type": "text"
+        },
+         {
+      "id": "section2AfterItem4Text",
+      "name": "section2AfterItem4Text text",
+      "type": "text"
+        },
+         {
+      "id": "section2AfterItem5Text",
+      "name": "section2AfterItem5Text text",
+      "type": "text"
+        },
+         {
+      "id": "section2AfterItem6Text",
+      "name": "section2AfterItem6Text text",
+      "type": "text"
+        },
+         {
+      "id": "section3Text1",
+      "name": "section3Text1 text",
+      "type": "text"
+        },
+         {
+      "id": "sectio3BlockGridItem1Text2",
+      "name": "sectio3BlockGridItem1Text2 text",
+      "type": "text"
+        },
+         {
+      "id": "sectio3BlockGridItem2Text2",
+      "name": "sectio3BlockGridItem2Text2 text",
+      "type": "text"
+        },
+         {
+      "id": "sectio3BlockGridItem3Text3",
+      "name": "sectio3BlockGridItem3Text3 text",
+      "type": "text"
+        },
+
+
+        {
+      "id": "section5Text1",
+      "name": "section5Text1 text",
+      "type": "text"
         },
         {
-      "id": "section2Logo5",
-      "name": "Section2 Logo 5",
-      "type": "image"
+      "id": "section5Text2",
+      "name": "section5Text2 text",
+      "type": "text"
         },
         {
-      "id": "section2Logo6",
-      "name": "Section2 Logo 6",
-      "type": "image"
+      "id": "section5Text3",
+      "name": "section5Text3 text",
+      "type": "text"
         },
         {
-      "id": "section6Testi1Img",
-      "name": "Section6 Testimonial 1 Image",
+      "id": "section5Text4",
+      "name": "section5Text4 text",
+      "type": "text"
+        },
+        {
+      "id": "section5Text5",
+      "name": "section5Text5 text",
+      "type": "text"
+        },
+        {
+      "id": "section6Title",
+      "name": "section6Title text",
+      "type": "text"
+        },
+         {
+      "id": "section6List",
+      "name": "section6List text",
+      "type": "text"
+        },
+
+          {
+      "id": "section6optinRightText1",
+      "name": "section6optinRightText1 text",
+      "type": "text"
+        },
+
+
+        {
+      "id": "section7Title",
+      "name": "section7Title text",
+      "type": "text"
+        },
+
+
+
+
+          {
+      "id": "section7BlockGridText1",
+      "name": "section7BlockGridText1 text",
+      "type": "text"
+        },
+         {
+      "id": "section7BlockGridText2",
+      "name": "section7BlockGridText2 text",
+      "type": "text"
+        },
+         {
+      "id": "section7BlockGridText3",
+      "name": "section7BlockGridText3 text",
+      "type": "text"
+        },
+         {
+      "id": "section7BlockGridText4",
+      "name": "section7BlockGridText4 text",
+      "type": "text"
+        },
+
+
+
+       {
+      "id": "section7BlockGrid2Text1",
+      "name": "section7BlockGrid2Text1 text",
+      "type": "text"
+        },
+       {
+      "id": "section7BlockGrid2Text2",
+      "name": "section7BlockGrid2Text2 text",
+      "type": "text"
+        },
+
+         {
+      "id": "section8Title",
+      "name": "section8Title text",
+      "type": "text"
+        },
+        {
+      "id": "section8Text1",
+      "name": "section8Text1 text",
+      "type": "text"
+        },
+        {
+      "id": "section8Text2",
+      "name": "section8Text2 text",
+      "type": "text"
+        },
+          {
+      "id": "section8Text3",
+      "name": "section8Text3 text",
+      "type": "text"
+        },
+         {
+      "id": "section9aText1",
+      "name": "section9aText1 text",
+      "type": "text"
+        },
+         {
+      "id": "section9aText2",
+      "name": "section9aText2 text",
+      "type": "text"
+        },
+
+
+
+         {
+      "id": "mbgText1",
+      "name": "mbgText1 text",
+      "type": "text"
+        },
+         {
+      "id": "mbgText2",
+      "name": "mbgText2 text",
+      "type": "text"
+        },
+         {
+      "id": "mbgText3",
+      "name": "mbgText3 text",
+      "type": "text"
+        },
+
+
+         {
+      "id": "section10aText1",
+      "name": "section10aText1 text",
+      "type": "text"
+        },
+         {
+      "id": "section10aText2",
+      "name": "section10aText2 text",
+      "type": "text"
+        },
+         {
+      "id": "section10OptinRightText",
+      "name": "section10OptinRightText text",
+      "type": "text"
+        },
+        {
+      "id": "footerText1",
+      "name": "footerText1 text",
+      "type": "text"
+        },
+
+
+
+
+
+   
+        {
+      "id": "headerRightLink1",
+      "name": "headerRightLink1 Link",
+      "type": "link"
+        },
+        {
+      "id": "Section1Optin",
+      "name": "Section1Optin Link",
+      "type": "link"
+        },
+         {
+      "id": "Section6Optin",
+      "name": "Section6Optin Link",
+      "type": "link"
+        },
+         {
+      "id": "Section10bOptin",
+      "name": "Section10bOptin Link",
+      "type": "link"
+        },
+
+
+
+
+        
+         {
+      "id": "logo",
+      "name": "logo Image",
+      "type": "image"
+        },
+
+         {
+      "id": "Section1OptinLeftImg1",
+      "name": "Section1OptinLeftImg1 Image",
+      "type": "image"
+        },
+
+         {
+      "id": "Section1OptinLeftImg2",
+      "name": "Section1OptinLeftImg2 Image",
+      "type": "image"
+        },
+
+         {
+      "id": "Section1OptinLeftImg3",
+      "name": "Section1OptinLeftImg3 Image",
+      "type": "image"
+        },
+
+         {
+      "id": "Section1OptinLeftImg4",
+      "name": "Section1OptinLeftImg4 Image",
+      "type": "image"
+        },
+
+         {
+      "id": "section6optinLeftImg1",
+      "name": "section6optinLeftImg1 Image",
       "type": "image"
         },
          {
-      "id": "section6Testi2Img",
-      "name": "Section6 Testimonial 2 Image",
+      "id": "section6optinLeftImg2",
+      "name": "section6optinLeftImg2 Image",
       "type": "image"
         },
          {
-      "id": "section6Testi3Img",
-      "name": "Section6 Testimonial 3 Image",
+      "id": "section6optinLeftImg3",
+      "name": "section6optinLeftImg3 Image",
+      "type": "image"
+        },
+         {
+      "id": "section6optinLeftImg4",
+      "name": "section6optinLeftImg4 Image",
+      "type": "image"
+        },
+         {
+      "id": "section6optinRightImg1",
+      "name": "section6optinRightImg1 Image",
+      "type": "image"
+        },
+
+
+
+         {
+      "id": "Section1OptinRightImg1",
+      "name": "Section1OptinRightImg1 Image",
+      "type": "image"
+        },
+         {
+      "id": "section4bGridImg1",
+      "name": "section4bGridImg1 Image",
+      "type": "image"
+        },
+         {
+      "id": "section4bGridImg2",
+      "name": "section4bGridImg2 Image",
+      "type": "image"
+        },
+         {
+      "id": "section4bGridImg3",
+      "name": "section4bGridImg3 Image",
+      "type": "image"
+        },
+         {
+      "id": "section4bGridImg4",
+      "name": "section4bGridImg4 Image",
+      "type": "image"
+        },
+         {
+      "id": "section4bGridImg5",
+      "name": "section4bGridImg5 Image",
+      "type": "image"
+        },
+          {
+      "id": "section2Img1",
+      "name": "section2Img1 Image",
+      "type": "image"
+        },
+
+         {
+      "id": "section2AfterImg1",
+      "name": "section2AfterImg1 Image",
+      "type": "image"
+        },
+         {
+      "id": "section2AfterImg2",
+      "name": "section2AfterImg2 Image",
+      "type": "image"
+        },
+         {
+      "id": "section2AfterImg3",
+      "name": "section2AfterImg3 Image",
+      "type": "image"
+        },
+         {
+      "id": "section2AfterImg4",
+      "name": "section2AfterImg4 Image",
+      "type": "image"
+        },
+
+
+         {
+      "id": "section2AfterItem1Img",
+      "name": "section2AfterItem1Img Image",
+      "type": "image"
+        }, 
+        {
+      "id": "section2AfterItem2Img",
+      "name": "section2AfterItem2Img Image",
+      "type": "image"
+        },
+         {
+      "id": "section2AfterItem3Img",
+      "name": "section2AfterItem3Img Image",
+      "type": "image"
+        },
+         {
+      "id": "section2AfterItem4Img",
+      "name": "section2AfterItem4Img Image",
+      "type": "image"
+        },
+         {
+      "id": "section2AfterItem5Img",
+      "name": "section2AfterItem5Img Image",
+      "type": "image"
+        },
+         {
+      "id": "section2AfterItem6Img",
+      "name": "section2AfterItem6Img Image",
+      "type": "image"
+        },
+
+
+
+          {
+      "id": "section5Img1",
+      "name": "section5Img1 Image",
+      "type": "image"
+        },
+          {
+      "id": "section5Img2",
+      "name": "section5Img2 Image",
+      "type": "image"
+        },
+          {
+      "id": "section5Img3",
+      "name": "section5Img3 Image",
+      "type": "image"
+        },
+          {
+      "id": "section5Img4",
+      "name": "section5Img4 Image",
+      "type": "image"
+        },
+
+
+         {
+      "id": "section7BlockGrid1Img1",
+      "name": "section7BlockGrid1Img1 Image",
+      "type": "image"
+        },
+         {
+      "id": "section7BlockGrid1Img2",
+      "name": "section7BlockGrid1Img2 Image",
+      "type": "image"
+        },
+         {
+      "id": "section7BlockGrid2Img1",
+      "name": "section7BlockGrid2Img1 Image",
+      "type": "image"
+        },
+
+
+
+         {
+      "id": "mbgImg",
+      "name": "mbgImg Image",
+      "type": "image"
+        },
+
+
+
+         {
+      "id": "section10bOptinImg1",
+      "name": "section10bOptinImg1 Image",
+      "type": "image"
+        },
+         {
+      "id": "section10bOptinImg2",
+      "name": "section10bOptinImg2 Image",
+      "type": "image"
+        },
+         {
+      "id": "section10bOptinImg3",
+      "name": "section10bOptinImg3 Image",
+      "type": "image"
+        },
+         {
+      "id": "section10bOptinImg4",
+      "name": "section10bOptinImg4 Image",
+      "type": "image"
+        },
+
+          {
+      "id": "section10OptinRightImg",
+      "name": "section10OptinRightImg Image",
       "type": "image"
         },
 
 
 
 
+         {
+      "id": "section7aGrid3Vid1",
+      "name": "section7aGrid3Vid1 Video",
+      "type": "video"
+        },
+      {
+      "id": "section7aGrid3Vid2",
+      "name": "section7aGrid3Vid2 Video",
+      "type": "video"
+        },
+         {
+      "id": "section7aGrid3Vid3",
+      "name": "section7aGrid3Vid3 Video",
+      "type": "video"
+        },
+         {
+      "id": "section7aGrid4Vid1",
+      "name": "section7aGrid4Vid1 Video",
+      "type": "video"
+        },
+         {
+      "id": "section7aGrid4Vid2",
+      "name": "section7aGrid4Vid2 Video",
+      "type": "video"
+        },
+         {
+      "id": "section7aGrid5Vid1",
+      "name": "section7aGrid5Vid1 Video",
+      "type": "video"
+        },
+
+
+
+
+        {
+      "type": "countdown",
+      "id": "ex09-countdown",
+      "name": "Example 9 Countdown"
+  },
 
 
             {
-      "id": "section1LeftVideo",
+      "id": "section1Video",
       "name": "Section 1 Video",
       "type": "video"
         }
