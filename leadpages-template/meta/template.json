@@ -2,59 +2,133 @@
 	"id": "MyCareertopia",
 	"name": "MyCareertopia", 
 	"mobile": true, 
-	"notes": "version 1.001", 
+	"notes": "version 1.146", 
 	"syntax": 4, 
-	"version": 1.001,
+	"version" : 1.146,
 	"style": {
 		"html": "",
 		"replacements": [
 
 
-        {
-              "type": "color",
-              "name": "Section1 border",
-              "find": "#47a562"
-          },
-        {
-              "type": "color",
-              "name": "section2 and 4 Bg",
-              "find": "#fffffe"
-          },
 
         {
               "type": "color",
-              "name": "Section2 border",
-              "find": "#d4d4d4"
+              "name": "ButtonBg",
+              "find": "#ec8737"
           },
-         
           {
+              "type": "color",
+              "name": "buttonColor2Border",
+              "find": "#c38348"
+          },
+           {
+              "type": "color",
+              "name": "ButtonBg Hover",
+              "find": "#ec8736"
+          },
+           {
+              "type": "color",
+              "name": "Button container",
+              "find": "#f3f3f3"
+          },
+          {
+              "type": "color",
+              "name": "Button container border",
+              "find": "#e5e4e4"
+          },
+
+        
+        
+        
+           
+          
+           {
+              "type": "color",
+              "name": "header Bg",
+              "find": "#fffff1"
+          },
+          {
+              "type": "color",
+              "name": "Header border",
+              "find": "#47a562"
+          },
+           {
+              "type": "color",
+              "name": "section1 Bg",
+              "find": "#fffff2"
+          },
+          {
+              "type": "color",
+              "name": "Logos bg",
+              "find": "#fffff4"
+          },
+          {
+              "type": "color",
+              "name": "logos border",
+              "find": "#b1ccb6"
+          },
+          
+          {
+              "type": "color",
+              "name": "section2 bg",
+              "find": "#fffffe"
+          },
+           {
+              "type": "color",
+              "name": "section2 divider",
+              "find": "#000002"
+          },
+           
+           {
+              "type": "color",
+              "name": "section 2 after bg",
+              "find": "#fffff6"
+          },
+           {
+              "type": "color",
+              "name": "section2 after divider",
+              "find": "#000003"
+          },
+          
+          
+           {
+              "type": "color",
+              "name": "section 3 bg",
+              "find": "#fffff3"
+          },
+            {
               "type": "color",
               "name": "Section3GridItemBorder",
               "find": "#ECF4FF"
           },
-
            {
               "type": "color",
-              "name": "section3GridBg",
+              "name": "Section3Grid BG",
               "find": "#DEEEFB"
           },
 
-			{
-              "type": "color",
-              "name": "section4Border",
-              "find": "#b1ccb6"
-          },
-
-        {
+          {
               "type": "color",
               "name": "section5Bg",
               "find": "#ECF4FE"
           },
-            {
+           
+          {
               "type": "color",
-              "name": "divider7",
-              "find": "#C8DBEC"
+              "name": "section 6 bg",
+              "find": "#fffff5"
           },
+          {
+              "type": "color",
+              "name": "Section 6 bullet bg",
+              "find": "#656564"
+          },
+           {
+              "type": "color",
+              "name": "Section 6 bullet line",
+              "find": "#d4d4d3"
+          },
+           
           {
               "type": "color",
               "name": "section7Bg",
@@ -62,9 +136,57 @@
           },
           {
               "type": "color",
-              "name": "Footer Bg",
-              "find": "#999999"
+              "name": "section7 box bg",
+              "find": "#fffffc"
           },
+          {
+              "type": "color",
+              "name": "divider7",
+              "find": "#C8DBEC"
+          },
+          {
+              "type": "color",
+              "name": "section 8 bg",
+              "find": "#fffff7"
+          },
+            {
+              "type": "color",
+              "name": "section 8 list arrows",
+              "find": "#ed6409"
+          },
+
+
+
+
+          {
+              "type": "color",
+              "name": "section 9 bg",
+              "find": "#fffff8"
+          },
+          {
+              "type": "color",
+              "name": "section 9 box bg",
+              "find": "#fffffb"
+          },
+          {
+              "type": "color",
+              "name": "section 10 bg",
+              "find": "#fffff9"
+          },
+           {
+              "type": "color",
+              "name": "footer bg",
+              "find": "#ffffd1"
+          },
+
+
+
+
+
+
+
+
+
            {
               "type": "color",
               "name": "dividerFooter",
@@ -110,6 +232,26 @@
             "html": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>"
         }
     },
+
+
+
+
+    "variables": {
+      "countdowndays": {
+        "variable": "countdowndays",
+        "dafault": "20",
+        "name": "Set the amount of days countdown timer cookie should default to. Default 20 days."
+      },
+        "toDate": {
+            "variable": "toDate", 
+            "dafault": "2014/12/15 18:00:00 GMT-0400", 
+            "name": "Countdown Timer End - (Format: YYYY/MM/DD HH:MM:SS GMT-0400). 24 hour time format. GMT time format required. See greenwichmeantime.com to convert for your timezone."
+        }
+  },
+
+
+
+
 	"elements": [
 		
         {
@@ -123,6 +265,16 @@
       "name": "Section 1 Container",
       "type": "container"
         },
+
+         {
+      "id": "Section1OptinWrap",
+      "name": "Section 1 Delay",
+      "type": "container",
+      "data" : {
+      "delay":1000
+          }
+        },
+
           {
       "id": "section2",
       "name": "Section 2 Container",
@@ -211,11 +363,7 @@
         "name": "section divider",
         "type": "container"
           },
-        {
-      "id": "Section1OptinWrap",
-      "name": "Section1OptinWrap container",
-      "type": "container"
-        },
+        
         {
       "id": "Section6OptinWrap",
       "name": "Section6OptinWrap container",
@@ -290,11 +438,7 @@
 
 
 
-         {
-      "id": "Section10bOptinWrap",
-      "name": "Section10bOptinWrap container",
-      "type": "container"
-        },
+        
 
 
 
@@ -310,13 +454,23 @@
       "type": "text"
         },
         {
-      "id": "section1Text",
-      "name": "section1Text text",
+      "id": "section1Text1",
+      "name": "section1Text1 text",
+      "type": "text"
+        },
+         {
+      "id": "section1Text2",
+      "name": "section1Text2 text",
       "type": "text"
         },
          {
       "id": "section2Text1",
       "name": "section2Text1 text",
+      "type": "text"
+        },
+        {
+      "id": "section2Text2",
+      "name": "section2Text2 text",
       "type": "text"
         },
          {
@@ -373,11 +527,31 @@
       "type": "text"
         },
          {
-      "id": "sectio3BlockGridItem3Text3",
-      "name": "sectio3BlockGridItem3Text3 text",
+      "id": "sectio3BlockGridItem3Text2",
+      "name": "sectio3BlockGridItem3Text2 text",
+      "type": "text"
+        },
+         {
+      "id": "sectio3BlockGridItem1Text1",
+      "name": "sectio3BlockGridItem1Text2 text",
+      "type": "text"
+        },
+         {
+      "id": "sectio3BlockGridItem2Text1",
+      "name": "sectio3BlockGridItem2Text2 text",
+      "type": "text"
+        },
+         {
+      "id": "sectio3BlockGridItem3Text1",
+      "name": "sectio3BlockGridItem3Text2 text",
       "type": "text"
         },
 
+         {
+      "id": "section4bText",
+      "name": "section4bText text",
+      "type": "text"
+        },
 
         {
       "id": "section5Text1",
@@ -535,6 +709,11 @@
       "name": "footerText1 text",
       "type": "text"
         },
+         {
+      "id": "section7aGrid5Text",
+      "name": "section7aGrid5Text text",
+      "type": "text"
+        },
 
 
 
@@ -569,6 +748,11 @@
          {
       "id": "logo",
       "name": "logo Image",
+      "type": "image"
+        },
+         {
+      "id": "logo2",
+      "name": "logo2 Image",
       "type": "image"
         },
 
@@ -715,6 +899,23 @@
 
 
 
+         {
+      "id": "sectio3BlockGridItem1Img",
+      "name": "sectio3BlockGridItem1Img Image",
+      "type": "image"
+        },
+         {
+      "id": "sectio3BlockGridItem2Img",
+      "name": "sectio3BlockGridItem2Img Image",
+      "type": "image"
+        },
+         {
+      "id": "sectio3BlockGridItem3Img",
+      "name": "sectio3BlockGridItem3Img Image",
+      "type": "image"
+        },
+
+
           {
       "id": "section5Img1",
       "name": "section5Img1 Image",
@@ -790,6 +991,17 @@
       "type": "image"
         },
 
+         {
+      "id": "section1Img1",
+      "name": "section1Img1 Image",
+      "type": "image"
+        },
+
+ {
+      "id": "section8Img1",
+      "name": "section8Img1 Image",
+      "type": "image"
+        },
 
 
 
@@ -823,22 +1035,33 @@
       "name": "section7aGrid5Vid1 Video",
       "type": "video"
         },
-
-
-
-
         {
-      "type": "countdown",
-      "id": "ex09-countdown",
-      "name": "Example 9 Countdown"
-  },
+      "id": "section7aGrid6Vid1",
+      "name": "section7aGrid6Vid1 Video",
+      "type": "video"
+        },
 
+
+
+      
 
             {
       "id": "section1Video",
       "name": "Section 1 Video",
       "type": "video"
-        }
+        },
+
+        { "id": "countdown-container", "name": "Countdown Section", "type": "container" },
+            { "id": "countdown","name": "Countdown","type": "countdown" },
+            { "id": "days-text","name": "Days Text","type": "text"}, 
+                { "id": "hours-text","name": "Hours Text","type": "text"}, 
+                { "id": "minutes-text", "name": "Minutes Text","type": "text"}, 
+                { "id": "seconds-text", "name": "Seconds Text","type": "text"},
+        { "id": "countdowncookie", "name": "Auto Countdown", "type": "dynamic","data": {"variables": ["countdowndays"]} }
+
+
+
+
 
 
 	]

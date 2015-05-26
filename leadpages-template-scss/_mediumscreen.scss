@@ -36,7 +36,7 @@
   
     &:after {
     
-    border-top: calc(40px) solid white;
+    border-top: calc(40px) solid $headerBg;
     border-left-width: calc(40px);
     border-right-width: calc(40px);
     margin-top: -12px;

@@ -18,48 +18,55 @@
 	<body>
 
 <div class="site-container">
-	<div id="header" class="row header">
-		<div class="columns small-12 medium-10 medium-centered">
-			<div id="headerLeft" class="columns small-12 medium-4">
-				<img id="logo" src="img/logo.png" alt="">
-			</div>
-			<div id="headerCenter" class="columns small-12 medium-4">
-				<div data-lead-id="countdown">
-				    <ul class="countdown">
-				        <li>
-				            <div class="flap"><span class="days">6</span></div>
-				            <p class="timeRefDays" data-lead-id="days-text">Days</p>
-				        </li>
-				        <li>
-				            <div class="flap">
-				                <span class="hours">4</span>
-				            </div>
-				            <p class="timeRefHours" data-lead-id="hours-text">Hours</p>
-				        </li>
-				        <li>
-				            <div class="flap">
-				                <span class="minutes">12</span>
-				            </div>
-				            <p class="timeRefMinutes" data-lead-id="minutes-text">Minutes</p>
-				        </li>
-				        <li>
-				            <div class="flap">
-				                <span class="seconds">44</span>
-				            </div>
-				            <p class="timeRefSeconds" data-lead-id="seconds-text">Seconds</p>
-				        </li>
-				    </ul>
+	<div class="row rowLg headerBg">
+		<div id="header" class="row ">
+			<div class="columns small-12 medium-10 medium-centered header">
+				<div id="headerLeft" class="columns small-12 medium-3">
+					<img id="logo" src="img/logo.png" alt="">
+				</div>
+				<div id="headerCenter" class="columns small-12 medium-6">
+					 <!--countdown-->
+	      <div id="countdown-container" class="countdown-container">
+	          <div id="countdown" class="timer">
+	              <ul id="" class="countdown">
+	                  <li>
+	                      <div class="time-wrap">
+	                          <span id="days"></span>
+	                      </div>
+	                      <p class="timeRefDays" id="days-text">Days</p>
+	                  </li>
+	                  <li>
+	                      <div class="time-wrap">
+	                          <span id="hours"></span>
+	                      </div>
+	                      <p class="timeRefHours" id="hours-text">Hours</p>
+	                  </li>
+	                  <li>
+	                      <div class="time-wrap">
+	                          <span id="minutes"></span>
+	                      </div>
+	                      <p class="timeRefMinutes" id="minutes-text">Minutes</p>
+	                  </li>
+	                  <li>
+	                      <div class="time-wrap">
+	                          <span id="seconds"></span>
+	                      </div>
+	                      <p class="timeRefSeconds" id="seconds-text">Seconds</p>
+	                  </li>
+	              </ul>
+	          </div>
+	      </div>
+	      <!--countdown end-->
+				</div>
+				<div id="headerRight" class="columns small-12 medium-3">
+					<div>
+						<a id="headerRightLink1" href="#">Need Help?</a>
+					</div>
 				</div>
 			</div>
-			<div id="headerRight" class="columns small-12 medium-4">
-				<div>
-					<a id="headerRightLink1" href="">Need Help?</a>
-				</div>
-			</div>
-		</div>
-		
-	</div> <!--Header-->
-	
+			
+		</div> <!--Header-->
+	</div>
 	<div id="section1Wrap" class="row rowLg section1">
 	<div id="divider1" >
 		<div class="divider section1Divider mg-btm-sm"></div>
@@ -73,10 +80,10 @@
 					<img id="Section1VideoImg" src="img/video-thumbnail.jpg" alt="">
 				</div>
 			</div>
-			
-			<div id="Section1Delay1">
+			<div class="cb"></div>
+			<div id="Section1Delay1" class="mg-top-sM">
 
-				<div id="Section1OptinWrap" class="optinWrap mg-top-sM mg-btm-md columns small-10 small-offset-1">
+				<div id="Section1OptinWrap" class="optinWrap mg-btm-md columns small-10 small-offset-1">
 
 					<div class="columns small-12">
 					<a id="Section1Optin" class="button  btn-large expand orangeBtn" href="#/optin">Get Your Assessment Now</a>
@@ -106,299 +113,322 @@
 		</div><!--Section1-->
 		</div><!--- Section 1 Wrap -->
 			<div class="cb"></div>
-		<div class="row" id="section1TextWrap">	
-			<div id="section1Text" class="mg-top-sm mg-btm-sm columns small-11 small-centered medium-10 medium-centered ">
-				
-				<h1 class="left">YOU OWE IT TO YOURSELF...</h1>
-				<div class="cb"></div>
-				<img src="img/mbg.png" alt="" class="imgLeft">
-				<p>You probably already understand the importance of career assessments. If not, check out the video presentation above to discover how the Career Insights &amp; Motivators Program can greatly improve your chances of job success.</p>
-	
-				<p>Our career assessments don’t simply ask you a few questions and provide you with a generic, re-hashed basic evaluation. </p>
-	
-				<p>No.</p>
-				<div class="cb"></div>	
-				<p>Our state-of-the-art criteria will provide you a full breakdown of your personality traits, including suitable AND unsuitable job roles that match your personal circumstances.</p>
-	
-				<p>The reports focus on two core areas. The first is how you work. This studies how you interact in various work environments, including different forms of communication and interaction. The second area looks at why you work. This looks at your motivations to help others, to learn and to command and lead.</p>
-	
-				<p>These are of course, huge simplifications of the process, but they form the basis of the powerful evaluation criteria the reports look at. </p>
+		<div class="row rowLg section1WrapBg">	
+			<div class="row" id="section1TextWrap">	
+				<div id="section1Text" class="mg-top-sm mg-btm-sm columns small-11 small-centered medium-10 medium-centered ">
 					
+					<h1 id="section1Text1" class="left">YOU OWE IT TO YOURSELF...</h1>
+					<div class="cb"></div>
+					<img id="section1Img1" src="img/mbg.png" alt="" class="imgLeft">
+					<div id="section1Text2">	
+						<p>You probably already understand the importance of career assessments. If not, check out the video presentation above to discover how the Career Insights &amp; Motivators Program can greatly improve your chances of job success.</p>
+			
+						<p>Our career assessments don’t simply ask you a few questions and provide you with a generic, re-hashed basic evaluation. </p>
+			
+						<p>No.</p>
+						<div class="cb"></div>	
+						<p>Our state-of-the-art criteria will provide you a full breakdown of your personality traits, including suitable AND unsuitable job roles that match your personal circumstances.</p>
+			
+						<p>The reports focus on two core areas. The first is how you work. This studies how you interact in various work environments, including different forms of communication and interaction. The second area looks at why you work. This looks at your motivations to help others, to learn and to command and lead.</p>
+			
+						<p>These are of course, huge simplifications of the process, but they form the basis of the powerful evaluation criteria the reports look at. </p>
+					</div>	
+				</div>
+				
+			</div><!--Section 1 text Wrap -->
+		</div><!--Bgcolor-->
+	<div class="section4 row rowLg">		
+		<div id="section4" class="row sectionWrap section4Wrap mg-top-sm ">
+			<div class="columns small-12 medium-10 medium-centered">
+				<div id="Section4a">
+					
+				</div>
+				<div id="section4b">
+					<h3 id="section4bText">We’ve worked with some of the best in the business… </h3>
+					<div id="section4bGrid" class="mg-top-xs mg-btm-xs">
+						<ul class="section4bBlockGrid ">
+							<li>
+								<div ><img id="section4bGridImg1" src="img/dell.png" alt=""></div>
+							</li>
+							<li>	
+								<div ><img id="section4bGridImg2" src="img/sap.png" alt=""></div>
+							</li>
+							<li>	
+								<div ><img  id="section4bGridImg3" src="img/telus.png" alt=""></div>
+							</li>
+							<li>
+								<div ><img id="section4bGridImg4" src="img/sas.png" alt=""></div>
+							</li>
+							<li>		
+								<div ><img id="section4bGridImg5" src="img/google.png" alt=""></div>
+							</li>
+						</ul>				
+					</div>
+				</div>
 			</div>
 			
-	</div><!--Section 1 text Wrap -->
-	<div id="section4" class="row sectionWrap section4Wrap mg-top-sm ">
-		<div class="columns small-12 medium-10 medium-centered">
-			<div id="Section4a">
-				
-			</div>
-			<div id="section4b">
-				<div id="section4bGrid" class="mg-top-xs ">
-					<ul class="section4bBlockGrid ">
-						<li>
-							<div id="section4bGridImg1"><img src="img/dell.png" alt=""></div>
-						</li>
-						<li>	
-							<div id="section4bGridImg2"><img src="img/sap.png" alt=""></div>
-						</li>
-						<li>	
-							<div id="section4bGridImg3"><img src="img/telus.png" alt=""></div>
-						</li>
-						<li>
-							<div id="section4bGridImg4"><img src="img/sas.png" alt=""></div>
-						</li>
-						<li>		
-							<div id="section4bGridImg5"><img src="img/google.png" alt=""></div>
-						</li>
-					</ul>				
-				</div>
-			</div>
-		</div>
-		
-	</div><!--Section 4 -->
-	<div id="section4Divider" class="divider section4Divider mg-btm-sm"></div>
+		</div><!--Section 4 -->
+			<div id="section4Divider" class="divider section4Divider mg-btm-sm"></div>
+	</div>	<!--Bg color-->
 
 
 
-	<div id="section2" class="row rowLg sectionWrap section2Wrap">
-		<div class="row">
-			<div class="columns small-12 small-centered medium-centered medium-10  mg-top-xs mg-btm-sm">
-				<div class="row small-collapse">
-						<div id="section2Text1">
-							<div>
-							<h1>The Career Insights &amp; Motivators Program Allows You to Find a Career You’ll Be Happy With</h1>
+	<div class="section2 row rowLg">
+		<div id="section2" class="row rowLg sectionWrap section2Wrap">
+			<div class="row">
+				<div class="columns small-12 small-centered medium-centered medium-10  mg-top-xs mg-btm-sm">
+					<div class="row small-collapse">
+							<div >
+								<div id="section2Text1">
+								<h1>The Career Insights &amp; Motivators Program Allows You to Find a Career You’ll Be Happy With</h1>
+								</div>
+								
+								<div id="section2Text2" class="mg-top-xs columns small-8" >
+								<p>Once you’ve taken the Career Insights &amp; Motivators Program you’ll be able to build a better understanding of how to get un-stuck from a poorly fitting job or a dead end career path. You’ll be able to properly understand your strengths, allowing you to effectively implement these discoveries in your future job choices.</p>
+								
+														<p>You’ll eliminate job stress by avoiding work that conflicts with your personal traits, allowing you to progress naturally at your own pace, in a role you’re comfortable with. </p>
+								</div>
+							</div>	
+							<div  class="columns small-4"><img id="section2Img1" src="img/lovejob.jpg" alt="">
 							</div>
-							
-							<div class="mg-top-xs columns small-8" id="section2Text">
-							<p>Once you’ve taken the Career Insights &amp; Motivators Program you’ll be able to build a better understanding of how to get un-stuck from a poorly fitting job or a dead end career path. You’ll be able to properly understand your strengths, allowing you to effectively implement these discoveries in your future job choices.</p>
-							
-													<p>You’ll eliminate job stress by avoiding work that conflicts with your personal traits, allowing you to progress naturally at your own pace, in a role you’re comfortable with. </p>
-							</div>
-						</div>	
-						<div id="section2Img1" class="columns small-4"><img src="img/lovejob.jpg" alt="">
 						</div>
+					
+						
 					</div>
-				
 					
 				</div>
-				
-			</div>
+
+
+				<div class="row">
+				<div id="section2AfterDivider1" class="divider mg-btm-sm columns small-8 small-centered" ></div>
+				</div><!--section 2 after divider -->
+
+
+
 		</div><!--Section 2-->
 
-	<div class="row">
-		<div id="section2AfterDivider1" class="divider mg-btm-sm columns small-8 small-centered" ></div>
-	</div><!--section 2 after divider -->
-	<div id="section2After" class="row">
-		<div class="row small-collapse ">
-			<div class="columns small-12 medium-10 medium-centered ">
-			<h1 id="section2AfterText1">WHAT'S INCLUDED IN THE ASSESSMENT PROGRAM</h1>
-			</div>
-			<div class="cb"></div>
-			<div class="columns small-12 medium-10 medium-centered mg-btm-sm mg-top-sm">
-				<div class="columns show-for-medium-up medium-4 medium-offset-1">
-					<img id="section2AfterImg1" class="columns medium-11 right" src="img/Motivators.png">
-				</div>
-				<div class="columns medium-6 medium-offset-1">
-					<img id="section2AfterImg2" class="columns medium-12" src="img/insightsReport.jpg"  alt="">
-				</div>	
-			</div>	
-			<div class="cb"></div>
-		</div>
-		<div class="cb"></div>
-		<div id="section2AfterItem1" class="row">
-			<div class="columns small-12 medium-10 medium-centered mg-top-sm">
-				<div class="columns medium-4">
-					<img id="section2AfterItem1Img" class="columns small-11 right" src="img/Motivators.png">
-				</div>
-				<div id="section2AfterItem1Text" class="columns medium-8">
-					<p>Flank meatloaf ham, boudin turducken pancetta meatball pork belly pork jowl bresaola.  Alcatra andouille cupim shank tri-tip short loin ribeye.  Pastrami porchetta doner pork loin leberkas pork chop turkey beef kevin flank picanha sirloin tongue shoulder andouille.  </p>
-				</div>
-			</div>
-		</div><!--item row -->	
-		<div id="section2AfterItem2" class="row">
-			<div class="columns small-12 medium-10 medium-centered mg-top-sm">
-				<div class="columns medium-4">
-					<img id="section2AfterItem2Img" class="columns medium-11 right" src="img/Motivators.png">
-				</div>
-				<div id="section2AfterItem2Text" class="columns medium-8">
-					<p>Flank meatloaf ham, boudin turducken pancetta meatball pork belly pork jowl bresaola.  Alcatra andouille cupim shank tri-tip short loin ribeye.  Pastrami porchetta doner pork loin leberkas pork chop turkey beef kevin flank picanha sirloin tongue shoulder andouille.  </p>
-				</div>
-			</div>
-		</div><!--item row -->	
-		<div id="section2AfterItem3" class="row">
-			<div class="columns small-12 medium-10 medium-centered mg-top-sm">
-				<div class="columns medium-4">
-					<img id="section2AfterItem3Img" class="columns medium-11 right" src="img/Motivators.png">
-				</div>
-				<div id="section2AfterItem3Text" class="columns medium-8">
-					<p>Flank meatloaf ham, boudin turducken pancetta meatball pork belly pork jowl bresaola.  Alcatra andouille cupim shank tri-tip short loin ribeye.  Pastrami porchetta doner pork loin leberkas pork chop turkey beef kevin flank picanha sirloin tongue shoulder andouille.  </p>
-				</div>
-			</div>
-		</div><!--item row -->	
-		<div id="section2AfterItem4" class="row">
-			<div class="columns small-12 medium-10 medium-centered mg-top-sm">
-				<div class="columns medium-4">
-					<img id="section2AfterItem4Img" class="columns medium-11 right" src="img/Motivators.png">
-				</div>
-				<div id="section2AfterItem4Text" class="columns medium-8">
-					<p>Flank meatloaf ham, boudin turducken pancetta meatball pork belly pork jowl bresaola.  Alcatra andouille cupim shank tri-tip short loin ribeye.  Pastrami porchetta doner pork loin leberkas pork chop turkey beef kevin flank picanha sirloin tongue shoulder andouille.  </p>
-				</div>
-			</div>
-		</div><!--item row -->	
-		<div class="row small-collapse ">
-			
-			<div class="columns small-12 medium-10 medium-centered mg-top-sm mg-btm-sm">
-				<div class="columns show-for-medium-up medium-4 medium-offset-1">
-					<img  id="section2AfterImg3" class="columns small-11 right" src="img/Motivators.png">
-				</div>
-				<div class="columns medium-6 medium-offset-1">
-					<img id="section2AfterImg4" class="columns small-12" src="img/motivatorsReport.png"  alt="">
-				</div>	
-			</div>	
-			<div class="cb"></div>
-		</div>
-		<div class="cb"></div>
-		<div id="section2AfterItem" class="row">
-			<div class="columns small-12 medium-10 medium-centered mg-top-sm">
-				<div class="columns medium-4">
-					<img id="section2AfterItem5Img" class="columns medium-11 right" src="img/Motivators.png">
-				</div>
-				<div  id="section2AfterItem5Text" class="columns medium-8">
-					<p>Flank meatloaf ham, boudin turducken pancetta meatball pork belly pork jowl bresaola.  Alcatra andouille cupim shank tri-tip short loin ribeye.  Pastrami porchetta doner pork loin leberkas pork chop turkey beef kevin flank picanha sirloin tongue shoulder andouille.  </p>
-				</div>
-			</div>
-		</div><!--item row -->	
-		<div id="section2AfterItem" class="row">
-			<div class="columns small-12 medium-10 medium-centered mg-top-sm">
-				<div class="columns medium-4">
-					<img id="section2AfterItem6Img" class="columns medium-11 right" src="img/Motivators.png">
-				</div>
-				<div id="section2AfterItem6Text" class="columns medium-8">
-					<p>Flank meatloaf ham, boudin turducken pancetta meatball pork belly pork jowl bresaola.  Alcatra andouille cupim shank tri-tip short loin ribeye.  Pastrami porchetta doner pork loin leberkas pork chop turkey beef kevin flank picanha sirloin tongue shoulder andouille.  </p>
-				</div>
-			</div>
-		</div><!--item row -->	
-	</div>	<!--Section 2 after-->
+		
+	</div> <!--bgcolor-->
 	
+	<div class="row rowLg section2After">
+		<div id="section2After" class="row">
+			<div class="row small-collapse ">
+				<div class="columns small-12 medium-10 medium-centered ">
+				<h1 id="section2AfterText1">WHAT'S INCLUDED IN THE ASSESSMENT PROGRAM</h1>
+				</div>
+				<div class="cb"></div>
+				<div class="columns small-12 medium-10 medium-centered mg-btm-sm mg-top-sm">
+					<div class="columns show-for-medium-up medium-5 medium-offset-1">
+						<img id="section2AfterImg1" class="columns medium-11 right" src="img/Motivators.png">
+					</div>
+					<div class="columns medium-6 ">
+						<img id="section2AfterImg2" class="columns medium-12" src="img/insightsReport.jpg"  alt="">
+					</div>	
+				</div>	
+				<div class="cb"></div>
+			</div>
+			<div class="cb"></div>
+			<div id="section2AfterItem1" class="row">
+				<div class="columns small-12 medium-10 medium-centered mg-top-sm">
+					<div class="columns medium-4">
+						<img id="section2AfterItem1Img" class="columns small-11 right" src="img/Motivators.png">
+					</div>
+					<div id="section2AfterItem1Text" class="columns medium-8">
+						<p>Flank meatloaf ham, boudin turducken pancetta meatball pork belly pork jowl bresaola.  Alcatra andouille cupim shank tri-tip short loin ribeye.  Pastrami porchetta doner pork loin leberkas pork chop turkey beef kevin flank picanha sirloin tongue shoulder andouille.  </p>
+					</div>
+				</div>
+			</div><!--item row -->	
+			<div id="section2AfterItem2" class="row">
+				<div class="columns small-12 medium-10 medium-centered mg-top-sm">
+					<div class="columns medium-4">
+						<img id="section2AfterItem2Img" class="columns medium-11 right" src="img/Motivators.png">
+					</div>
+					<div id="section2AfterItem2Text" class="columns medium-8">
+						<p>Flank meatloaf ham, boudin turducken pancetta meatball pork belly pork jowl bresaola.  Alcatra andouille cupim shank tri-tip short loin ribeye.  Pastrami porchetta doner pork loin leberkas pork chop turkey beef kevin flank picanha sirloin tongue shoulder andouille.  </p>
+					</div>
+				</div>
+			</div><!--item row -->	
+			<div id="section2AfterItem3" class="row">
+				<div class="columns small-12 medium-10 medium-centered mg-top-sm">
+					<div class="columns medium-4">
+						<img id="section2AfterItem3Img" class="columns medium-11 right" src="img/Motivators.png">
+					</div>
+					<div id="section2AfterItem3Text" class="columns medium-8">
+						<p>Flank meatloaf ham, boudin turducken pancetta meatball pork belly pork jowl bresaola.  Alcatra andouille cupim shank tri-tip short loin ribeye.  Pastrami porchetta doner pork loin leberkas pork chop turkey beef kevin flank picanha sirloin tongue shoulder andouille.  </p>
+					</div>
+				</div>
+			</div><!--item row -->	
+			<div id="section2AfterItem4" class="row">
+				<div class="columns small-12 medium-10 medium-centered mg-top-sm">
+					<div class="columns medium-4">
+						<img id="section2AfterItem4Img" class="columns medium-11 right" src="img/Motivators.png">
+					</div>
+					<div id="section2AfterItem4Text" class="columns medium-8">
+						<p>Flank meatloaf ham, boudin turducken pancetta meatball pork belly pork jowl bresaola.  Alcatra andouille cupim shank tri-tip short loin ribeye.  Pastrami porchetta doner pork loin leberkas pork chop turkey beef kevin flank picanha sirloin tongue shoulder andouille.  </p>
+					</div>
+				</div>
+			</div><!--item row -->	
+			<div class="row small-collapse ">
+				
+				<div class="columns small-12 medium-10 medium-centered mg-top-sm mg-btm-sm">
+					<div class="columns show-for-medium-up medium-5 medium-offset-1">
+						<img  id="section2AfterImg3" class="columns small-11 right" src="img/Motivators.png">
+					</div>
+					<div class="columns medium-6">
+						<img id="section2AfterImg4" class="columns small-12" src="img/motivatorsReport.png"  alt="">
+					</div>	
+				</div>	
+				<div class="cb"></div>
+			</div>
+			<div class="cb"></div>
+			<div id="section2AfterItem" class="row">
+				<div class="columns small-12 medium-10 medium-centered mg-top-sm">
+					<div class="columns medium-4">
+						<img id="section2AfterItem5Img" class="columns medium-11 right" src="img/Motivators.png">
+					</div>
+					<div  id="section2AfterItem5Text" class="columns medium-8">
+						<p>Flank meatloaf ham, boudin turducken pancetta meatball pork belly pork jowl bresaola.  Alcatra andouille cupim shank tri-tip short loin ribeye.  Pastrami porchetta doner pork loin leberkas pork chop turkey beef kevin flank picanha sirloin tongue shoulder andouille.  </p>
+					</div>
+				</div>
+			</div><!--item row -->	
+			<div id="section2AfterItem" class="row">
+				<div class="columns small-12 medium-10 medium-centered mg-top-sm">
+					<div class="columns medium-4">
+						<img id="section2AfterItem6Img" class="columns medium-11 right" src="img/Motivators.png">
+					</div>
+					<div id="section2AfterItem6Text" class="columns medium-8">
+						<p>Flank meatloaf ham, boudin turducken pancetta meatball pork belly pork jowl bresaola.  Alcatra andouille cupim shank tri-tip short loin ribeye.  Pastrami porchetta doner pork loin leberkas pork chop turkey beef kevin flank picanha sirloin tongue shoulder andouille.  </p>
+					</div>
+				</div>
+			</div><!--item row -->	
+		</div>	<!--Section 2 after-->
 
 	<div class="row">
 		<div id="section2AfterDivider2" class="divider mg-btm-sm mg-top-sm columns small-8 small-centered" ></div>
+
+	</div><!--BgColor-->	
+		
+
+	
 	</div><!--section 2 after divider2 -->	
-	
-	<div id="section3" class="row mg-top-sm" >
-		<div class="columns small-12 medium-10 medium-centered ">
-		<h1 id="section3Text1">THE BENEFITS OF OUR ASSESSMENTS</h1>
-		</div>
+	<div class="section3 row rowLg">
+		<div id="section3" class="row mg-top-sm" >
+			<div class="columns small-12 medium-10 medium-centered ">
+			<h1 id="section3Text1">THE BENEFITS OF OUR ASSESSMENTS</h1>
+			</div>
 
 
-		<div id="section3BlockGridWrap" class="section3BlockGridWrap columns small-12 medium-10 medium-centered">
-			<ul id="section3BlockGrid" class="section3BlockGrid" >
-				<li id="sectio3BlockGridItem1" class="sectio3BlockGridItem" >
-					<div class="section3GridItem">
-						<div class="columns small-12 small-centered pd-top-sm pd-btm-sm">
-							
-							<h2 id="sectio3BlockGridItem1Text1">Nicely presented & easy to take</h2>
-							<img id="sectio3BlockGridItem1Img" src="img/nice.png" alt="">
-							<p id="sectio3BlockGridItem1Text2">The final Career Insights and Motivators reports are delivered in a readable, clear and easy-to-understand format. This ensures you don’t waste time “decoding” complex jargon and makes it easy to evaluate your results.
-							</p>
+			<div id="section3BlockGridWrap" class="section3BlockGridWrap columns small-12 medium-10 medium-centered">
+				<ul id="section3BlockGrid" class="section3BlockGrid" >
+					<li id="sectio3BlockGridItem1" class="sectio3BlockGridItem" >
+						<div class="section3GridItem">
+							<div class="columns small-12 small-centered pd-top-sm pd-btm-sm">
+								
+								<h2 id="sectio3BlockGridItem1Text1">Nicely presented & easy to take</h2>
+								<img id="sectio3BlockGridItem1Img" src="img/nice.png" alt="">
+								<p id="sectio3BlockGridItem1Text2">The final Career Insights and Motivators reports are delivered in a readable, clear and easy-to-understand format. This ensures you don’t waste time “decoding” complex jargon and makes it easy to evaluate your results.
+								</p>
+							</div>
+						</div>	
+					</li>
+					<li id="sectio3BlockGridItem2" class="sectio3BlockGridItem" >
+						<div class="section3GridItem">
+							<div class="columns small-12 small-centered pd-top-sm pd-btm-sm">
+								
+								<h2 id="sectio3BlockGridItem2Text1">Scientifically <br>Booked</h2>
+								<img id="sectio3BlockGridItem2Img" src="img/science.png" alt="">
+								<p id="sectio3BlockGridItem2Text2">The Career Insights and Motivators report uses the science backed DISC and Motivators assessment criteria to guarantee accurate and precise analysis.  This gives you the confidence that your results are reflective and reliable, and allows you to focus on what’s important to you; finding a suitable job.
+								</p>
+							</div>
 						</div>
-					</div>	
-				</li>
-				<li id="sectio3BlockGridItem2" class="sectio3BlockGridItem" >
-					<div class="section3GridItem">
-						<div class="columns small-12 small-centered pd-top-sm pd-btm-sm">
-							
-							<h2 id="sectio3BlockGridItem2Text1">Scientifically <br>Booked</h2>
-							<img id="sectio3BlockGridItem2Img" src="img/science.png" alt="">
-							<p id="sectio3BlockGridItem2Text2">The Career Insights and Motivators report uses the science backed DISC and Motivators assessment criteria to guarantee accurate and precise analysis.  This gives you the confidence that your results are reflective and reliable, and allows you to focus on what’s important to you; finding a suitable job.
-							</p>
+					</li>
+					<li id="sectio3BlockGridItem3" class="sectio3BlockGridItem" >
+						<div class="section3GridItem">	
+							<div class="columns small-12 small-centered pd-top-sm pd-btm-sm">
+								
+								<h2 id="sectio3BlockGridItem3Text1">Easily accessible & friendly staff</h2>
+								<img id="sectio3BlockGridItem3Img" src="img/phone.png" alt="">
+								<p id="sectio3BlockGridItem3Text2">Our certified career coaches provide detailed feedback and analysis on your reports. With over two decades of experience working in career assessment roles, they’re on hand to guide you through your results and provide expert advice on suitable job roles matching your selected criteria.
+								</p>
+							</div>
 						</div>
-					</div>
-				</li>
-				<li id="sectio3BlockGridItem3" class="sectio3BlockGridItem" >
-					<div class="section3GridItem">	
-						<div class="columns small-12 small-centered pd-top-sm pd-btm-sm">
-							
-							<h2 id="sectio3BlockGridItem3Text1">Easily accessible & friendly staff</h2>
-							<img id="sectio3BlockGridItem3Img" src="img/phone.png" alt="">
-							<p id="sectio3BlockGridItem3Text3">Our certified career coaches provide detailed feedback and analysis on your reports. With over two decades of experience working in career assessment roles, they’re on hand to guide you through your results and provide expert advice on suitable job roles matching your selected criteria.
-							</p>
-						</div>
-					</div>
-				</li>
-				
-			</ul>
-		</div><!--Section3 Grid Wrap-->
-	</div><!--Section 3 -->
-	
+					</li>
+					
+				</ul>
+			</div><!--Section3 Grid Wrap-->
+		</div><!--Section 3 -->
 
 
 	<div class="row">
 		<div id="section5Divider" class="divider mg-btm-sm mg-top-sm columns small-8 small-centered" ></div>
 	</div><!--section 5 divider -->	
 
+	</div><!--BGgolro-->
 
-	<div id="section5" class="row">
-		<div class="row small-collapse ">
-			<div class="columns small-12 medium-10 medium-centered ">
-			<h1 id="section5Text1">After you've taken the test, to help ensure you get the most out of your results, you'll also receive instant access to our powerful evaluation resources including:
-				</h1>
+
+
+	<div class="row rowLg section5">
+		<div id="section5" class="row">
+			<div class="row small-collapse ">
+				<div class="columns small-12 medium-10 medium-centered ">
+				<h1 id="section5Text1">After you've taken the test, to help ensure you get the most out of your results, you'll also receive instant access to our powerful evaluation resources including:
+					</h1>
+				</div>
+				<div class="cb"></div>
 			</div>
 			<div class="cb"></div>
-		</div>
-		<div class="cb"></div>
-		<div id="section5Item1" class="row section5Item">
-			<div class="columns small-12 medium-10 medium-centered mg-top-sm">
-				<div class="columns medium-3">
-					<img id="section5Img1" class="columns small-12 " src="img/free.png">
+			<div id="section5Item1" class="row section5Item">
+				<div class="columns small-12 medium-10 medium-centered mg-top-sm">
+					<div class="columns medium-3">
+						<img id="section5Img1" class="columns small-12 " src="img/free.png">
+					</div>
+					<div id="section5Text2" class="columns medium-9">
+						<h1>Job Application Cheat Sheet:</h1>
+						<p>To help you use your completed assessments in your path to find a job, we provide you with a cheat sheet to help you do just that. You’ll be shown a variety of keywords to avoid or pursue during your job search, alongside other helpful direction.</p>
+					</div>
 				</div>
-				<div id="section5Text2" class="columns medium-9">
-					<h1>Job Application Cheat Sheet:</h1>
-					<p>To help you use your completed assessments in your path to find a job, we provide you with a cheat sheet to help you do just that. You’ll be shown a variety of keywords to avoid or pursue during your job search, alongside other helpful direction.</p>
+			</div><!--item row -->	
+			<div id="section5Item2" class="row section5Item">
+				<div class="columns small-12 medium-10 medium-centered mg-top-sm">
+					<div class="columns medium-3">
+						<img id="section5Img2" class="columns small-12 " src="img/free.png">
+					</div>
+					<div id="section5Text3" class="columns medium-9">
+						<h1>30 Days of Unlimited Email Coaching:</h1>
+						<p>After successful completion of your assessment you’ll enjoy 30 days of completely free email coaching. Whether you want to find out more about your results, ask one of our career assessment experts about your new direction or simply enquire about a certain aspect of the report, our experts are on hand to help you.</p>
+					</div>
 				</div>
-			</div>
-		</div><!--item row -->	
-		<div id="section5Item2" class="row section5Item">
-			<div class="columns small-12 medium-10 medium-centered mg-top-sm">
-				<div class="columns medium-3">
-					<img id="section5Img2" class="columns small-12 " src="img/free.png">
+			</div><!--item row -->	
+			<div id="section5Item3" class="row section5Item">
+				<div class="columns small-12 medium-10 medium-centered mg-top-sm">
+					<div class="columns medium-3">
+						<img id="section5Img3" class="columns small-12 " src="img/free.png">
+					</div>
+					<div id="section5Text4" class="columns medium-9">
+						<h1>Unlimited Access to Our Video Library:</h1>
+						<p>To assist you further with understanding your assessment, we’ve created an extensive video course to enable you to learn more about your work styles and your motivators. You can work through the video training at your own pace, and you’ll enjoy unlimited access for life.</p>
+					</div>
 				</div>
-				<div id="section5Text3" class="columns medium-9">
-					<h1>30 Days of Unlimited Email Coaching:</h1>
-					<p>After successful completion of your assessment you’ll enjoy 30 days of completely free email coaching. Whether you want to find out more about your results, ask one of our career assessment experts about your new direction or simply enquire about a certain aspect of the report, our experts are on hand to help you.</p>
+			</div><!--item row -->	
+			<div id="section5Item4" class="row section5Item">
+				<div class="columns small-12 medium-10 medium-centered mg-top-sm">
+					<div class="columns medium-3">
+						<img id="section5Img4" class="columns small-12 " src="img/free.png">
+					</div>
+					<div id="section5Text5" class="columns medium-9">
+						<h1>Personalized Follow-up Call:</h1>
+						<p>Because we care about your success, you’ll receive a personal follow-up call (if requested) to chat through your results, and talk about anything you’re unsure about. You’ll be able to ask any questions you may have, and together, we will ensure the report is helping you in your quest to learning more about yourself and the career path you should be taking. </p>
+					</div>
 				</div>
-			</div>
-		</div><!--item row -->	
-		<div id="section5Item3" class="row section5Item">
-			<div class="columns small-12 medium-10 medium-centered mg-top-sm">
-				<div class="columns medium-3">
-					<img id="section5Img3" class="columns small-12 " src="img/free.png">
-				</div>
-				<div id="section5Text4" class="columns medium-9">
-					<h1>Unlimited Access to Our Video Library:</h1>
-					<p>To assist you further with understanding your assessment, we’ve created an extensive video course to enable you to learn more about your work styles and your motivators. You can work through the video training at your own pace, and you’ll enjoy unlimited access for life.</p>
-				</div>
-			</div>
-		</div><!--item row -->	
-		<div id="section5Item4" class="row section5Item">
-			<div class="columns small-12 medium-10 medium-centered mg-top-sm">
-				<div class="columns medium-3">
-					<img id="section5Img4" class="columns small-12 " src="img/free.png">
-				</div>
-				<div id="section5Text5" class="columns medium-9">
-					<h1>Personalized Follow-up Call:</h1>
-					<p>Because we care about your success, you’ll receive a personal follow-up call (if requested) to chat through your results, and talk about anything you’re unsure about. You’ll be able to ask any questions you may have, and together, we will ensure the report is helping you in your quest to learning more about yourself and the career path you should be taking. </p>
-				</div>
-			</div>
-		</div><!--item row -->	
+			</div><!--item row -->	
 
-	</div><!--Section5 new -->
-
+		</div><!--Section5 new -->
+	</div><!--BgColor-->
 
 
 	
-	
-	<div id="section6" class="row mg-top-sm">
+	<div class="row rowLg section6">
+		<div id="section6" class="row mg-top-sm">
 		<div id="section6Title" class="columns small-12 medium-10 medium-centered mg-btm-xs">
 			<h1>5 Simple Steps To Get Started
 			</h1>
@@ -442,17 +472,17 @@
 					</div><!--OptinLower-->			
 				</div><!--Section6OptinWrap-->
 				<div class="cb mg-btm-md"></div>
-	</div><!--Section 6 -->
-	
-	
-	<div id="section7" class="row rowLg section7Bg">
+		</div><!--Section 6 -->
+	</div><!-- bgcolor-->
+	<div class="row rowLg section7">
+		<div id="section7" class="row rowLg section7Bg">
 		<div id="section7Wrap" class="row ">
-			<div id="section7Title" class="mg-top-xs columns small-12">
+					<div id="section7Title" class="mg-top-xs columns small-12">
 						<h1>People all over the world are benefiting from the Career Insights and Motivators Program!
 						</h1>
 					</div>
 					<div class="cb"></div>
-					<div id="section7a" class="columns small-12 small-centered medium-10 medium-centered box white section7a">
+					<div id="section7a" class="columns small-12 small-centered medium-10 medium-centered box  section7a">
 					<div id="section7aGridWrap" class="section7aGridWrap">
 						
 						<div id="section7aGrid" class="columns small-12">
@@ -558,19 +588,24 @@
 						
 						<div id="section7aGrid6" class="row">
 							<div class="columns small-11 small-centered medium-8" >
+								<div id="section7aGrid6Vid1">						
 								<img src="img/video-thumbnail.jpg">
+								</div>
 							</div>
 						</div>		
 						
 
 
 					</div><!--Section 7a-->
-				</div>
-	</div><!--Section 7-->
-	<div id="section7Divider" class="row rowLg">
-		<div class="divider section7Divider mg-btm-sm"></div>
-	</div>
-	<div id="section8" class="row">
+				</div><!--Seciton 7 wrap-->
+		</div><!--Section 7-->
+		<div id="section7Divider" class="row rowLg">
+			<div class="divider section7Divider mg-btm-sm"></div>
+		</div>
+	</div><!--Bgcolor-->
+	
+	<div class="row rowLg section8">
+		<div id="section8" class="row">
 		<div id="section8Title" class="columns small-11 small-centered">
 			<h1>The Career Insights and Motivators Report is Designed For YOUR Success.
 			</h1>
@@ -583,8 +618,8 @@
 
 			<p>But we understand you want something that’s not only extremely effective, but also affordable…</p>
 			</div>
-			<div id="section8Img1" class="columns small-6 small-centered medium-uncentered medium-4 report1">
-				<img src="img/Motivators.png" alt="">
+			<div  class="columns small-6 small-centered medium-uncentered medium-4 report1">
+				<img id="section8Img1" src="img/Motivators.png" alt="">
 			</div>
 			<div class="cb"></div>
 			<div class="columns small-12 medium-10 medium-centered priceList">
@@ -611,8 +646,10 @@
 				</ul>
 			</div>
 		</div>
-	</div><!--Section 8-->
-	<div id="section9" class="row">
+		</div><!--Section 8-->
+	</div><!-- BgColor-->	
+	<div class="row rowLg section9">
+		<div id="section9" class="row">
 		<div id="section9Title">
 			<h1>
 				
@@ -629,13 +666,13 @@
 					
            			 <div class="cb"></div>
            		<div class="mbgText columns small-12 medium-8">	 
-					<div class="mbgText1">Still Not Sure?</div>
-					<div class="mbgText2">No Worries. Our Product comes with A</div>
-					<div class="mbgText3">30 Day Money Back Guarantee</div>
+					<div id="mbgText1" class="mbgText1">Still Not Sure?</div>
+					<div id="mbgText2" class="mbgText2">No Worries. Our Product comes with A</div>
+					<div id="mbgText3" class="mbgText3">30 Day Money Back Guarantee</div>
 					
 				</div>
-				<div id="mbgImg" class="columns small-8 small-centered medium-uncentered medium-4">
-						<img src="img/mbg.png" alt="">
+				<div  class="columns small-8 small-centered medium-uncentered medium-4">
+						<img id="mbgImg" src="img/mbg.png" alt="">
 					</div>
 				<div class="cb"></div>	
 			</div>
@@ -658,8 +695,10 @@
 			</div>
 			
 		</div>
-	</div><!--Section 9-->
-	<div id="section10" class="row">
+		</div><!--Section 9-->
+	</div><!--Bg Color-->
+	<div class="row rowLg section10">	
+		<div id="section10" class="row">
 		<div id="section10a" class="columns small-12 medium-10 medium-centered">
 			<h1 id="section10aText1">Secure Your Place in the Career Insights and Motivators Program Now!
 			</h1>
@@ -696,13 +735,14 @@
 				</div><!--Section1OptinWrap-->
 				<div class="cb mg-btm-md"></div>
 		</div>
-	</div><!--Section 10-->
+		</div><!--Section 10-->
+	</div><!-- Bg Color-->
 	<div id="footerDivider" class="divider footerDivider">
 		
 	</div>
 	<div id="footer" class="row rowLg">
 		<div class="footer">
-			<img id="logo" class="columns small-8 small-offset-2 medium-3 medium-offset-0 grayscale" src="img/logo.png" alt="">
+			<img id="logo2" class="columns small-8 small-offset-2 medium-3 medium-offset-0 grayscale" src="img/logo.png" alt="">
 			<span id="footerText1" class="columns small-12 medium-6 medium-pull-3 ">Copyright The Balanced WorkLife Company 2014</span>
 		</div>
 	</div>

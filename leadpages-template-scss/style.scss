@@ -32,7 +32,7 @@ $bulletBtm:#0068D9;
 $optinWrapBg:#f3f3f3;
 $optinWrapBorder:#e5e4e4;
 $buttonColor2:#ec8737;
-$buttonColor2Hover:#ec8737;
+$buttonColor2Hover:#ec8736;
 $buttonColor2Border:#c38348;
 $buttonColor2BorderHover:#c38348;
 
@@ -70,21 +70,34 @@ $pColor:#595757;
 
 
 /*--- Other By section--*/
+$countdownColor:#00000f;
 $headerBtmBorder:transparent;
 $divider1: #47a562;
 
+
+/*--header--*/
+$headerBg:#fffff1;
+
+/*-----section 1---*/
+$section1Bg:#fffff2;
+
+$section1TextWrap:#ffffd2;
 
 /*--- Section 2--*/
 $section2Bg:#fffffe;
 $section2Border:#d4d4d4;
 
 
+/*-- Section 2 After --*/
+$section2AfterBg:#fffff6;
+
 /*--- Section 3--*/
 $Section3GridItemBorder:#ECF4FF;
 $section3GridBg:#DEEEFB;
+$section3Bg:#fffff3;
 
 /*--- Section 4--*/
-$section4Bg:#fffffe;
+$section4Bg:#fffff4;
 $section4Border:#b1ccb6;
 
 /*--- Section 5--*/
@@ -105,17 +118,78 @@ $baselineheight : 1.5;
 $baseline-unit: $basefontsize * $baselineheight;
 $basefontpercent: $basefontsize/16 * 100;
 
-
+/*-- Section 6--*/
+$section6Bg:#fffff5;
 
 /*--- Section 7--*/
 $divider7: #C8DBEC;
 $section7Bg:#ECF4FB;
+$section7aBox:#fffffc;
 
 
 /*--- Section 8--*/
+$section8Bg:#fffff7;
+
+/*--- Section 9---*/
+$section9Bg:#fffff8;
+$mbg:#fffffb;
+
+/*--- Section 10 ---*/
+$section10Bg:#fffff9;
 
 /*--- Footer--*/
 $dividerFooter: #d4d4d6;
+$footerBg:#ffffd1;
+
+
+
+/*---- background colors applied ----*/
+
+.headerBg{
+  background-color: $headerBg;
+}
+.section1WrapBg{
+  background-color: $section1Bg;
+}
+#section1TextWrap{
+//background-color: $section1TextWrap;
+}
+.section4
+{
+  background-color: $section4Bg;
+}
+
+.section2{
+  background-color: $section2Bg;
+}
+.section2After{
+  background-color: $section2AfterBg;
+}
+.section3{
+  background-color: $section3Bg;
+}
+.section5{
+  background-color: $section5Bg;
+}
+.section6{
+  background-color: $section6Bg;
+}
+.section7{
+  background-color: $section7Bg;
+}
+.section8{
+  background-color: $section8Bg;
+}
+
+.section9{
+  background-color: $section9Bg;
+}
+.section10{
+  background-color: $section10Bg;
+}
+#footer{
+  background-color: $footerBg;
+}
 
 
 /* sitewide
@@ -412,10 +486,35 @@ color: $black;
 #headerRight a{
   color: black;
   font-family: $bodyFamily;
+  text-align: right;
   &:hover{
     color:black;
   }
 }  
+
+
+
+/* ------------------ Countdown ------------------ */
+.countdown-container {display: inline-block;margin: auto;position: relative;}
+.countdown-container ul.countdown {padding: 0;margin: 0;overflow: auto;position: relative;}
+.countdown-container ul.countdown li {float: left;display: inline-block;background:none;padding:0;text-align: center;margin-right: 5px;overflow: hidden;}
+.countdown-container ul.countdown li:last-child{margin-right:0;}
+.countdown-container ul.countdown li span { color:$countdownColor; font-weight: 700;font-size: 36px;line-height: 36px;text-align: center;letter-spacing: 3px;padding-left: 5px; margin-top: 0; padding-top: 0;}
+.countdown-container ul.countdown li p.timeRefDays,
+.countdown-container ul.countdown li p.timeRefHours,
+.countdown-container ul.countdown li p.timeRefMinutes,
+.countdown-container ul.countdown li p.timeRefSeconds {display: inline-block;font-weight: 400;
+  text-transform: uppercase;font-size: 12px;text-align: center;
+  margin: 2px auto ;letter-spacing: 0;width: 100%;line-height: 17px;text-align:center;color:$countdownColor; 
+}
+
+
+
+
+
+
+
+
 /* Section1
 ---------------------------------------------------------------------------------------------------- */
 .section1{
@@ -460,13 +559,15 @@ color: $black;
   
     &:after {
     
-    border-top: calc(40px) solid white;
+    border-top: calc(40px) solid $headerBg;
     border-left-width: calc(40px);
     border-right-width: calc(40px);
     margin-top: -12px;
     
     }
   }
+
+
 
 
 
@@ -480,7 +581,7 @@ color: $black;
 }
 
 .section2Wrap{
-  background: $section2Bg;
+  //background: $section2Bg;
   border-bottom-color: transparent; ;
   //border-top: 1px solid $section2Border;
 }
@@ -522,7 +623,14 @@ color: $black;
 }
 
 
+#section2AfterDivider1{
+  color: #000002;
+}
 
+
+#section2AfterDivider2{
+  color: #000003;
+}
 
 /* Section3
 ---------------------------------------------------------------------------------------------------- */
@@ -623,7 +731,7 @@ color: $black;
 
 
 #section4bGrid ul li img{
-  height: 75px;
+  max-height: 75px;
 }
 
 .section4Divider{
@@ -885,7 +993,7 @@ ol ol {
     
     //height:100px;
     text-align: left;
-
+    z-index: 0;
 }
 
 .rectangle-list2 li:hover{
@@ -933,6 +1041,7 @@ ol ol {
   margin-bottom: calc(30px);
   padding-top: calc(30px);
   padding-bottom: calc(30px);
+  background-color: $section7aBox;
 
 }
 
@@ -1180,6 +1289,7 @@ ol ol {
   padding-bottom: calc(20px);
   margin-bottom: calc(40px);
   margin-top:calc(40px);
+  background-color: $mbg;
 }
 
 .mgbText
